@@ -9752,7 +9752,9 @@
       "key": "E minor",
       "energy": "high",
       "mood": "uplifting",
-      "moods": [],
+      "moods": [
+        "groovy"
+      ],
       "styles": [
         "dance"
       ],

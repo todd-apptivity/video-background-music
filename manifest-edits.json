@@ -45,6 +45,11 @@
       "reviewedOn": "2026-10-04",
       "sha256": "df4edcd0997cb5952a90e026ed70bc38299d481198bbbc7d218ff793ad15edf8"
     },
+    "vgma-challenge-04": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "a6cf619d917095c46271daf26786c0b39da81dc6a24b745ae4406f850c035e30"
+    },
     "vgma-challenge-14": {
       "reviewed": true,
       "reviewedOn": "2026-10-04",
@@ -57,6 +62,11 @@
         "moods": []
       },
       "sha256": "fac7445ed258605515e09ba12103799181f232112225839f2570ce9d15b2fcf7"
+    },
+    "vgma-challenge-28": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "8e4a8ca12e1f31294cf9570911bac4694c8654be5f46defb165fc83aae8b7db9"
     },
     "week-10---mischief-melody-2": {
       "reviewed": true,
@@ -77,6 +87,19 @@
       "reviewed": true,
       "reviewedOn": "2026-10-04",
       "sha256": "a7bd29e432cc48cf3c08958a4944cc1d8ab2782a26f3bcb81f0709060ab233fe"
+    },
+    "week-30---crushing-it-smoov": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "set": {
+        "moods": [
+          "groovy"
+        ]
+      },
+      "was": {
+        "moods": []
+      },
+      "sha256": "38c84cd8b52b1337260d10185c9918efbdeb7e99f2d068c06ddbe0f053e9716e"
     }
   }
 }
