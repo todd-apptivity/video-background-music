@@ -1,0 +1,82 @@
+{
+  "_comment": "Corrections made by a person in scripts/catalog-editor.py. `set` is re-applied over manifest.json by tag-tracks.py and sync-upstream.mjs, so it always wins over the tagger. `was` is each field's value before its first edit. `reviewed` and `note` stay here and never reach the manifest.",
+  "tracks": {
+    "dani-maccari-asset-pack---jester-s-distraction": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "80201d27e3ba5349f5d196309f28aa4bb01f4190f4f0a94b71840a75e86065df"
+    },
+    "dani-maccari-asset-pack---shadow-lurking": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "4799b8f1aff544b87c6856c0658aedd80d9a4ce16c83c868f1b8d1c9c4c41872"
+    },
+    "interior-birdecorator-decorate": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "f641114df7624b20064e169caea8e77d61ec898c29f7cb819c5938e9c086729a"
+    },
+    "ludum-dare-30-09": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "a70365814d74f844abbf67d163947b175faae2e2d16bca18ac94b66ee7cef400"
+    },
+    "sketchbook-2024-05-22": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "set": {
+        "styles": [
+          "synthwave",
+          "electronic",
+          "funk"
+        ]
+      },
+      "was": {
+        "styles": [
+          "synthwave",
+          "electronic",
+          "dance"
+        ]
+      },
+      "sha256": "d3033f8dd37c3bfcad33b0caed1ed6d229d0a898f3235e801b4ccd22fc12858f"
+    },
+    "sketchbook-2024-10-30": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "df4edcd0997cb5952a90e026ed70bc38299d481198bbbc7d218ff793ad15edf8"
+    },
+    "vgma-challenge-14": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "set": {
+        "moods": [
+          "energetic"
+        ]
+      },
+      "was": {
+        "moods": []
+      },
+      "sha256": "fac7445ed258605515e09ba12103799181f232112225839f2570ce9d15b2fcf7"
+    },
+    "week-10---mischief-melody-2": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "3990ef17abdafa83ff96a93cae632c3b16988009d0d1d5e2b5a2472564b3b15e"
+    },
+    "week-10---mischief-zoomies": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "9b37942aae591ab909ffd5b638621ffe76824f38376de493196523a6419fd964"
+    },
+    "week-14---lift-you-up-chorus": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "afdf5d82a752f67879a1c0f21aa72fcb7e60b89709d23e1d1146243d75b19e90"
+    },
+    "week-14---lift-you-up-melody": {
+      "reviewed": true,
+      "reviewedOn": "2026-10-04",
+      "sha256": "a7bd29e432cc48cf3c08958a4944cc1d8ab2782a26f3bcb81f0709060ab233fe"
+    }
+  }
+}

@@ -2809,7 +2809,7 @@
       "styles": [
         "synthwave",
         "electronic",
-        "dance"
+        "funk"
       ],
       "genres": [
         "Electronic---Chiptune",
@@ -7554,7 +7554,9 @@
       "key": "C minor",
       "energy": "high",
       "mood": "happy",
-      "moods": [],
+      "moods": [
+        "energetic"
+      ],
       "styles": [
         "synthwave",
         "electronic"
