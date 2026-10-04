@@ -19,3 +19,18 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+SCOPE: THE SOFTWARE, NOT THE MUSIC.
+
+"The Software" above means the contents of this repository — scripts/,
+manifest.json, and the documentation. It does NOT cover the audio tracks
+published as this repository's GitHub release assets.
+
+Those tracks are each dedicated to the public domain by their composers under
+CC0 1.0 Universal <https://creativecommons.org/publicdomain/zero/1.0/>, and
+their per-track licence is recorded in manifest.json. CC0 permits
+redistribution; it does not permit re-licensing someone else's work, so no
+claim is made over the audio here. See LICENSES/PROVENANCE.md for what came
+from where, and README.md for credit.

@@ -1,0 +1,9 @@
+node_modules/
+
+# Transcoded output, staged for upload as release assets and then thrown away.
+# Never committed: the whole design of this repository is that the audio lives
+# in releases, not in git history — see README.md.
+/build/
+
+# Audition shortlist staged by the seed-selection step. Derived from build/.
+/candidates/
