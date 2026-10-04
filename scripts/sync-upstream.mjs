@@ -261,7 +261,7 @@ async function describe(input, source, outDir, { measureLoudness }) {
 }
 
 /** The fields scripts/tag-tracks.py owns. Keep in step with OWNED_FIELDS there. */
-const TAG_FIELDS = ["bpm", "bpmConfident", "tempo", "key", "energy", "mood", "tags", "genres"];
+const TAG_FIELDS = ["bpm", "bpmConfident", "tempo", "key", "energy", "mood", "moods", "styles", "genres"];
 
 /** `track` with `old`'s tag fields placed after `source`, the order tag-tracks.py writes. */
 function withTagFields(track, old) {

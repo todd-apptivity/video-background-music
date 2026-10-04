@@ -32,7 +32,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 135,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G major",
+      "energy": "medium",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "happy"
+      ],
+      "styles": [
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Eurobeat",
+        "Electronic---Hi NRG",
+        "Electronic---Disco Polo"
+      ],
       "loopable": true,
       "durationS": 21.33,
       "lufs": -17.22,
@@ -48,7 +66,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "tense",
+      "moods": [
+        "tense",
+        "epic"
+      ],
+      "styles": [
+        "medieval",
+        "cinematic",
+        "orchestral"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 25.26,
       "lufs": -20.25,
@@ -64,7 +101,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 88,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "groovy"
+      ],
+      "styles": [
+        "lounge"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Future Jazz",
+        "Electronic---Acid Jazz"
+      ],
       "loopable": true,
       "durationS": 87.27,
       "lufs": -16.28,
@@ -80,7 +134,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [],
+      "styles": [
+        "lounge",
+        "acoustic",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 101.68,
       "lufs": -19.84,
@@ -96,7 +164,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 96,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [],
+      "styles": [
+        "lounge",
+        "piano",
+        "jazz"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Latin Jazz",
+        "Jazz---Post Bop"
+      ],
       "loopable": true,
       "durationS": 101.68,
       "lufs": -25.52,
@@ -112,7 +196,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting",
+        "melancholic"
+      ],
+      "styles": [
+        "folk",
+        "piano",
+        "medieval"
+      ],
+      "genres": [
+        "Children's---Nursery Rhymes",
+        "Electronic---New Age",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 101.68,
       "lufs": -22.57,
@@ -128,7 +231,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A major",
+      "energy": "low",
+      "mood": "calm",
+      "moods": [],
+      "styles": [
+        "lounge",
+        "acoustic",
+        "medieval"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 101.68,
       "lufs": -22.02,
@@ -144,7 +261,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 88,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic"
+      ],
+      "styles": [
+        "piano",
+        "lounge",
+        "acoustic"
+      ],
+      "genres": [],
       "loopable": true,
       "durationS": 43.64,
       "lufs": -18.57,
@@ -160,7 +291,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 88,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [],
+      "styles": [
+        "lounge",
+        "piano",
+        "jazz"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 32.73,
       "lufs": -18.03,
@@ -176,7 +321,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 154,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "chiptune",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Experimental",
+        "Electronic---IDM"
+      ],
       "loopable": true,
       "durationS": 118.45,
       "lufs": -13.67,
@@ -192,7 +354,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 60,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "F major",
+      "energy": "low",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "melancholic"
+      ],
+      "styles": [
+        "medieval",
+        "orchestral",
+        "piano"
+      ],
+      "genres": [],
       "loopable": true,
       "durationS": 144.06,
       "lufs": -19.49,
@@ -208,7 +385,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 115,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "rock"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Electro",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 132.43,
       "lufs": -13.36,
@@ -224,7 +417,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "F major",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [],
+      "styles": [
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Synthwave",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 128.01,
       "lufs": -11.94,
@@ -240,7 +447,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 175,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [
+        "groovy",
+        "energetic"
+      ],
+      "styles": [
+        "funk",
+        "rock",
+        "jazz"
+      ],
+      "genres": [
+        "Funk / Soul---Funk",
+        "Jazz---Afrobeat",
+        "Jazz---Jazz-Funk"
+      ],
       "loopable": true,
       "durationS": 126.9,
       "lufs": -11.12,
@@ -256,7 +482,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 96,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "tense"
+      ],
+      "styles": [
+        "cinematic",
+        "orchestral",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 149.92,
       "lufs": -13.44,
@@ -272,7 +515,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 108,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "Ab major",
+      "energy": "high",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "melancholic"
+      ],
+      "styles": [
+        "folk",
+        "rock",
+        "acoustic"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Dungeon Synth",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 107.66,
       "lufs": -10.59,
@@ -288,7 +550,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "electronic",
+        "synthwave",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---UK Garage",
+        "Electronic---Bassline",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 137.14,
       "lufs": -12.55,
@@ -304,7 +584,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 153,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "low",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "tense"
+      ],
+      "styles": [
+        "medieval",
+        "orchestral",
+        "cinematic"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 99.74,
       "lufs": -15.24,
@@ -320,7 +617,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "epic"
+      ],
+      "styles": [
+        "rock",
+        "synthwave"
+      ],
+      "genres": [],
       "loopable": true,
       "durationS": 113.14,
       "lufs": -10.58,
@@ -336,7 +647,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "mysterious"
+      ],
+      "styles": [
+        "orchestral",
+        "medieval",
+        "cinematic"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 86.4,
       "lufs": -13.41,
@@ -352,7 +680,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 171,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "happy"
+      ],
+      "styles": [
+        "rock",
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack"
+      ],
       "loopable": true,
       "durationS": 59.29,
       "lufs": -16.89,
@@ -368,7 +713,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 67,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "C major",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "calm"
+      ],
+      "styles": [
+        "cinematic",
+        "piano",
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age",
+        "Classical---Neo-Classical"
+      ],
       "loopable": true,
       "durationS": 154.5,
       "lufs": -21.87,
@@ -384,7 +748,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 96,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G minor",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting"
+      ],
+      "styles": [
+        "lofi",
+        "rock",
+        "orchestral"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Chillwave",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 121.26,
       "lufs": -15.78,
@@ -400,7 +782,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "chiptune",
+        "synthwave",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Electro",
+        "Electronic---Synth-pop"
+      ],
       "loopable": true,
       "durationS": 65.14,
       "lufs": -15.53,
@@ -416,7 +817,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 130,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "high",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "uplifting"
+      ],
+      "styles": [
+        "orchestral",
+        "folk",
+        "acoustic"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 83.08,
       "lufs": -11.42,
@@ -432,7 +850,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 126,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "Eb minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "happy"
+      ],
+      "styles": [
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient",
+        "Electronic---Goa Trance"
+      ],
       "loopable": true,
       "durationS": 55.58,
       "lufs": -14.82,
@@ -448,7 +884,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Breakcore",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 48.01,
       "lufs": -10.04,
@@ -464,7 +914,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 30,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "C major",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "calm"
+      ],
+      "styles": [
+        "piano",
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Experimental",
+        "Electronic---Drone"
+      ],
       "loopable": true,
       "durationS": 78,
       "lufs": -18.38,
@@ -480,7 +948,20 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "medium",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "tense"
+      ],
+      "styles": [
+        "rock"
+      ],
+      "genres": [],
       "loopable": true,
       "durationS": 64,
       "lufs": -13.37,
@@ -496,7 +977,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "F major",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "playful"
+      ],
+      "styles": [
+        "electronic",
+        "dance",
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Techno",
+        "Electronic---New Beat",
+        "Electronic---Synth-pop"
+      ],
       "loopable": true,
       "durationS": 32,
       "lufs": -12.28,
@@ -512,7 +1012,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 112,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "low",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "dark"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Dungeon Synth",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 63.72,
       "lufs": -14.68,
@@ -528,7 +1045,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 150,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "playful"
+      ],
+      "styles": [
+        "folk",
+        "lounge",
+        "acoustic"
+      ],
+      "genres": [],
       "loopable": true,
       "durationS": 67.2,
       "lufs": -14.71,
@@ -544,7 +1076,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [
+        "happy"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Downtempo",
+        "Electronic---IDM"
+      ],
       "loopable": true,
       "durationS": 64,
       "lufs": -13.32,
@@ -560,7 +1106,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C major",
+      "energy": "high",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "uplifting"
+      ],
+      "styles": [
+        "acoustic",
+        "lofi",
+        "medieval"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 62.12,
       "lufs": -12.88,
@@ -576,7 +1141,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Hands Up",
+        "Electronic---Disco Polo",
+        "Electronic---Trance"
+      ],
       "loopable": true,
       "durationS": 41.14,
       "lufs": -11.02,
@@ -592,7 +1174,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "high",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Berlin-School",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 55.99,
       "lufs": -13.83,
@@ -608,7 +1206,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 112,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [
+        "happy"
+      ],
+      "styles": [
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Deep House",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 60,
       "lufs": -10.3,
@@ -624,7 +1238,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 161,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "happy"
+      ],
+      "styles": [
+        "folk",
+        "rock",
+        "lounge"
+      ],
+      "genres": [
+        "Folk, World, & Country---Indian Classical",
+        "Electronic---Downtempo",
+        "Electronic---Dub"
+      ],
       "loopable": true,
       "durationS": 60,
       "lufs": -10.13,
@@ -640,7 +1273,20 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 84,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "G minor",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [],
+      "styles": [
+        "rock"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 68.57,
       "lufs": -13.02,
@@ -656,7 +1302,20 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack"
+      ],
       "loopable": true,
       "durationS": 32,
       "lufs": -15.17,
@@ -672,7 +1331,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 142,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "energetic"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Grime",
+        "Hip Hop---Trap",
+        "Electronic---Dubstep"
+      ],
       "loopable": true,
       "durationS": 64.23,
       "lufs": -14.31,
@@ -688,7 +1362,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 132,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "calm",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Experimental",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 58.45,
       "lufs": -21.53,
@@ -704,7 +1390,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "Eb major",
+      "energy": "low",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 64,
       "lufs": -20.09,
@@ -720,7 +1418,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 107,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "Eb major",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "lofi",
+        "funk"
+      ],
+      "genres": [
+        "Hip Hop---Instrumental",
+        "Hip Hop---Jazzy Hip-Hop",
+        "Hip Hop---Boom Bap"
+      ],
       "loopable": true,
       "durationS": 60,
       "lufs": -15.59,
@@ -736,7 +1451,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "tense"
+      ],
+      "styles": [
+        "orchestral",
+        "cinematic",
+        "medieval"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Stage & Screen---Soundtrack",
+        "Electronic---Dungeon Synth"
+      ],
       "loopable": true,
       "durationS": 103.66,
       "lufs": -17.04,
@@ -752,7 +1486,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 180,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "mysterious"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Berlin-School",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 64,
       "lufs": -15.38,
@@ -768,7 +1519,18 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "playful",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Children's---Nursery Rhymes",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 48,
       "lufs": -19.88,
@@ -784,7 +1546,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Cool Jazz"
+      ],
       "loopable": true,
       "durationS": 76.8,
       "lufs": -18.48,
@@ -800,7 +1580,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 123,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Tech House",
+        "Electronic---Minimal Techno",
+        "Electronic---Techno"
+      ],
       "loopable": true,
       "durationS": 62.44,
       "lufs": -13.38,
@@ -816,7 +1613,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 84,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "epic"
+      ],
+      "styles": [
+        "medieval",
+        "piano",
+        "cinematic"
+      ],
+      "genres": [
+        "Classical---Neo-Classical",
+        "Classical---Neo-Romantic"
+      ],
       "loopable": true,
       "durationS": 108.1,
       "lufs": -23.08,
@@ -832,7 +1647,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "tense",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 22.59,
       "lufs": -24.44,
@@ -848,7 +1675,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 113,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "mysterious",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Drum n Bass",
+        "Electronic---Halftime",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 22.59,
       "lufs": -13.4,
@@ -864,7 +1703,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 170,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Drum n Bass",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 22.59,
       "lufs": -12.79,
@@ -880,7 +1733,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 170,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Hip Hop---Gangsta",
+        "Hip Hop---Cloud Rap"
+      ],
       "loopable": true,
       "durationS": 22.59,
       "lufs": -13.06,
@@ -896,7 +1763,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Drum n Bass",
+        "Electronic---Halftime",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 22.59,
       "lufs": -13.13,
@@ -912,7 +1793,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 0,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "B minor",
+      "energy": "medium",
+      "mood": "energetic",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Hip Hop---Miami Bass",
+        "Electronic---Drum n Bass",
+        "Electronic---Halftime"
+      ],
       "loopable": true,
       "durationS": 1.41,
       "lufs": -17.16,
@@ -928,7 +1821,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 77,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "D minor",
+      "energy": "low",
+      "mood": "tense",
+      "moods": [
+        "tense",
+        "epic"
+      ],
+      "styles": [
+        "medieval",
+        "orchestral",
+        "cinematic"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 66.67,
       "lufs": -17.34,
@@ -944,7 +1854,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Glitch",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 36,
       "lufs": -15.19,
@@ -960,7 +1886,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 42.67,
       "lufs": -15.72,
@@ -976,7 +1916,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 62.4,
       "lufs": -16.4,
@@ -992,7 +1947,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 80,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "G minor",
+      "energy": "low",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "uplifting"
+      ],
+      "styles": [
+        "lofi",
+        "acoustic",
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 114,
       "lufs": -17.56,
@@ -1008,7 +1982,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 131,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "low",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "tense"
+      ],
+      "styles": [
+        "medieval",
+        "cinematic",
+        "orchestral"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age",
+        "Electronic---Berlin-School"
+      ],
       "loopable": true,
       "durationS": 98.18,
       "lufs": -19.9,
@@ -1024,7 +2017,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 105,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy",
+        "dark"
+      ],
+      "styles": [
+        "lofi",
+        "rock"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 56,
       "lufs": -17.49,
@@ -1040,7 +2050,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 113,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Drum n Bass",
+        "Electronic---Halftime",
+        "Electronic---Jungle"
+      ],
       "loopable": true,
       "durationS": 84.71,
       "lufs": -14.49,
@@ -1056,7 +2080,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 78,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "Ab minor",
+      "energy": "low",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "tense"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Experimental",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 24.62,
       "lufs": -26.56,
@@ -1072,7 +2113,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 78,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "Ab minor",
+      "energy": "medium",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "mysterious"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Experimental",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 49.23,
       "lufs": -14.55,
@@ -1088,7 +2146,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 156,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "Ab minor",
+      "energy": "medium",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "tense"
+      ],
+      "styles": [
+        "ambient",
+        "cinematic"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Berlin-School",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 98.46,
       "lufs": -14.24,
@@ -1104,7 +2180,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 162,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 72,
       "lufs": -15.64,
@@ -1120,7 +2210,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 162,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy",
+        "happy"
+      ],
+      "styles": [
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Deep House",
+        "Electronic---Downtempo",
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 30,
       "lufs": -17.61,
@@ -1136,7 +2243,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 115,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "F minor",
+      "energy": "medium",
+      "mood": "playful",
+      "moods": [
+        "playful"
+      ],
+      "styles": [
+        "dance",
+        "synthwave",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---House",
+        "Electronic---Deep House",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 100.17,
       "lufs": -17.36,
@@ -1152,7 +2277,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C major",
+      "energy": "low",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting",
+        "dreamy"
+      ],
+      "styles": [
+        "acoustic",
+        "ambient",
+        "piano"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 79.06,
       "lufs": -19.1,
@@ -1168,7 +2312,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 84,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "tense",
+      "moods": [
+        "tense",
+        "epic"
+      ],
+      "styles": [
+        "cinematic",
+        "orchestral",
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Experimental",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 90.35,
       "lufs": -26.67,
@@ -1184,7 +2347,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 30,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "D minor",
+      "energy": "low",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "calm"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Experimental",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 69.82,
       "lufs": -21.58,
@@ -1200,7 +2380,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 80,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy"
+      ],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 60,
       "lufs": -19.87,
@@ -1216,7 +2412,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "calm"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Berlin-School",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 85.33,
       "lufs": -15.92,
@@ -1232,7 +2445,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Dub"
+      ],
       "loopable": true,
       "durationS": 48,
       "lufs": -16.88,
@@ -1248,7 +2475,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "dark"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 48,
       "lufs": -16.5,
@@ -1264,7 +2506,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "tense"
+      ],
+      "styles": [
+        "ambient",
+        "cinematic",
+        "piano"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 90.35,
       "lufs": -19.31,
@@ -1280,7 +2541,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "E minor",
+      "energy": "medium",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "calm"
+      ],
+      "styles": [
+        "jazz",
+        "acoustic",
+        "rock"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 101.65,
       "lufs": -15.09,
@@ -1296,7 +2575,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "mysterious",
+      "moods": [],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Techno",
+        "Electronic---Bleep",
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 72,
       "lufs": -16.09,
@@ -1312,7 +2606,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 80,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "F minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 60,
       "lufs": -15.21,
@@ -1328,7 +2637,20 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "Eb major",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Dungeon Synth"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -17.32,
@@ -1344,7 +2666,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 112,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "Eb major",
+      "energy": "low",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "tense"
+      ],
+      "styles": [
+        "ambient",
+        "cinematic",
+        "orchestral"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 67.76,
       "lufs": -17.08,
@@ -1360,7 +2700,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 110,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "medium",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "funk",
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Funk / Soul---New Jack Swing",
+        "Electronic---House",
+        "Hip Hop---RnB/Swing"
+      ],
       "loopable": true,
       "durationS": 43.64,
       "lufs": -16.85,
@@ -1376,7 +2735,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 161,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "energetic",
+      "moods": [],
+      "styles": [
+        "synthwave",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Vaporwave",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 51,
       "lufs": -15.56,
@@ -1392,7 +2766,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "D minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Trip Hop",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 56.47,
       "lufs": -15.3,
@@ -1408,7 +2796,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 115,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "playful"
+      ],
+      "styles": [
+        "synthwave",
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Synth-pop",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 50.09,
       "lufs": -14.69,
@@ -1424,7 +2831,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 115,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Deep House",
+        "Electronic---House",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 43.83,
       "lufs": -14.46,
@@ -1440,7 +2861,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "medieval",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 38.4,
       "lufs": -15.72,
@@ -1456,7 +2892,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 45.87,
       "lufs": -16.11,
@@ -1472,7 +2922,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 161,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "acoustic",
+        "jazz"
+      ],
+      "genres": [
+        "Electronic---IDM",
+        "Electronic---Ambient",
+        "Jazz---Smooth Jazz"
+      ],
       "loopable": true,
       "durationS": 48,
       "lufs": -16.29,
@@ -1488,7 +2953,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 122,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "Eb major",
+      "energy": "low",
+      "mood": "dark",
+      "moods": [
+        "dark"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Dungeon Synth",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 44.87,
       "lufs": -24.05,
@@ -1504,7 +2985,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 104,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "dark",
+      "moods": [
+        "dark"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 61.54,
       "lufs": -14.74,
@@ -1520,7 +3015,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 155,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "F minor",
+      "energy": "low",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "calm"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 78.9,
       "lufs": -19.31,
@@ -1536,7 +3048,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 130,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting"
+      ],
+      "styles": [
+        "lofi",
+        "acoustic"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 60.92,
       "lufs": -14.51,
@@ -1552,7 +3081,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "synthwave",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Synthwave",
+        "Electronic---Synth-pop",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 58.67,
       "lufs": -12.04,
@@ -1568,7 +3114,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 145,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "tense"
+      ],
+      "styles": [
+        "cinematic",
+        "orchestral",
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Experimental",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 55.89,
       "lufs": -14.33,
@@ -1584,7 +3149,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 129,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "dark",
+      "moods": [
+        "dark"
+      ],
+      "styles": [
+        "rock"
+      ],
+      "genres": [],
       "loopable": true,
       "durationS": 59.08,
       "lufs": -19.84,
@@ -1600,7 +3177,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 129,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "groovy",
+      "moods": [
+        "groovy",
+        "dark"
+      ],
+      "styles": [
+        "rock",
+        "funk"
+      ],
+      "genres": [],
       "loopable": true,
       "durationS": 59.08,
       "lufs": -19.43,
@@ -1616,7 +3207,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 130,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "groovy",
+      "moods": [
+        "groovy",
+        "dark"
+      ],
+      "styles": [
+        "rock",
+        "jazz",
+        "acoustic"
+      ],
+      "genres": [],
       "loopable": true,
       "durationS": 59.08,
       "lufs": -19.24,
@@ -1632,7 +3238,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 130,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "acoustic",
+        "folk",
+        "rock"
+      ],
+      "genres": [],
       "loopable": true,
       "durationS": 59.08,
       "lufs": -16.68,
@@ -1648,7 +3269,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 128,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "synthwave",
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Synth-pop",
+        "Electronic---Chiptune",
+        "Electronic---Eurodance"
+      ],
       "loopable": true,
       "durationS": 30,
       "lufs": -11.29,
@@ -1664,7 +3304,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 128,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "synthwave",
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Synth-pop",
+        "Electronic---Electro",
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 45,
       "lufs": -11.51,
@@ -1680,7 +3339,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "F minor",
+      "energy": "high",
+      "mood": "dreamy",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Drum n Bass",
+        "Electronic---Downtempo",
+        "Electronic---Jungle"
+      ],
       "loopable": true,
       "durationS": 56.47,
       "lufs": -12.99,
@@ -1696,7 +3367,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 175,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [
+        "calm"
+      ],
+      "styles": [
+        "medieval",
+        "ambient",
+        "folk"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age",
+        "Electronic---Berlin-School"
+      ],
       "loopable": true,
       "durationS": 88.94,
       "lufs": -17.42,
@@ -1712,7 +3401,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 88,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy"
+      ],
+      "styles": [
+        "lofi",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient",
+        "Electronic---Berlin-School"
+      ],
       "loopable": true,
       "durationS": 65.45,
       "lufs": -12.26,
@@ -1728,7 +3434,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "uplifting"
+      ],
+      "styles": [
+        "rock",
+        "funk"
+      ],
+      "genres": [
+        "Electronic---Disco Polo"
+      ],
       "loopable": true,
       "durationS": 58.7,
       "lufs": -11.91,
@@ -1744,7 +3466,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "uplifting"
+      ],
+      "styles": [
+        "rock",
+        "funk",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Disco Polo"
+      ],
       "loopable": true,
       "durationS": 57.39,
       "lufs": -11.9,
@@ -1760,7 +3499,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 130,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "calm"
+      ],
+      "styles": [
+        "ambient",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 103.38,
       "lufs": -14.88,
@@ -1776,7 +3533,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 104,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "calm"
+      ],
+      "styles": [
+        "lofi",
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 54.86,
       "lufs": -17.36,
@@ -1792,7 +3567,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 170,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "G minor",
+      "energy": "high",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "dreamy"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 67.76,
       "lufs": -13.65,
@@ -1808,7 +3598,18 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "F major",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 90.35,
       "lufs": -17.36,
@@ -1824,7 +3625,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 130,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "F minor",
+      "energy": "low",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "tense"
+      ],
+      "styles": [
+        "orchestral",
+        "cinematic",
+        "piano"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 118.15,
       "lufs": -17.88,
@@ -1840,7 +3659,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 125,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "F minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---UK Garage",
+        "Electronic---House",
+        "Electronic---Speed Garage"
+      ],
       "loopable": true,
       "durationS": 36.48,
       "lufs": -15.29,
@@ -1856,7 +3690,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 128,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "mysterious"
+      ],
+      "styles": [
+        "piano",
+        "cinematic"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Classical---Contemporary"
+      ],
       "loopable": true,
       "durationS": 75,
       "lufs": -16.52,
@@ -1872,7 +3723,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 161,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "E minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Juke",
+        "Electronic---Drum n Bass",
+        "Electronic---IDM"
+      ],
       "loopable": true,
       "durationS": 60,
       "lufs": -13.39,
@@ -1888,7 +3753,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "G minor",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "lounge",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Future Jazz",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 48,
       "lufs": -13.69,
@@ -1904,7 +3786,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 130,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "playful"
+      ],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Freestyle",
+        "Electronic---Electro",
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 53.54,
       "lufs": -12.16,
@@ -1920,7 +3820,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 104,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient",
+        "Electronic---IDM"
+      ],
       "loopable": true,
       "durationS": 115.38,
       "lufs": -14.56,
@@ -1936,7 +3848,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 30,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "tense"
+      ],
+      "styles": [
+        "orchestral",
+        "cinematic",
+        "medieval"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 102.4,
       "lufs": -21.84,
@@ -1952,7 +3881,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 76,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy",
+        "calm"
+      ],
+      "styles": [
+        "acoustic",
+        "lofi",
+        "funk"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 75.79,
       "lufs": -13.2,
@@ -1968,7 +3915,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C# major",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "groovy"
+      ],
+      "styles": [
+        "funk",
+        "dance",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Future Jazz"
+      ],
       "loopable": true,
       "durationS": 52.8,
       "lufs": -13.46,
@@ -1984,7 +3949,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 161,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting"
+      ],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---IDM",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 67.5,
       "lufs": -14.45,
@@ -2000,7 +3981,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 65,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "F major",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [
+        "calm",
+        "dreamy"
+      ],
+      "styles": [
+        "lofi",
+        "lounge",
+        "acoustic"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 59.08,
       "lufs": -13.87,
@@ -2016,7 +4016,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 147,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "F minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "electronic",
+        "synthwave",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---IDM",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 39.27,
       "lufs": -14.02,
@@ -2032,7 +4050,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 113,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "F major",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting"
+      ],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Drum n Bass",
+        "Electronic---Halftime",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 45.18,
       "lufs": -16.51,
@@ -2048,7 +4082,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "calm"
+      ],
+      "styles": [
+        "ambient",
+        "piano"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age",
+        "Classical---Neo-Classical"
+      ],
       "loopable": true,
       "durationS": 57.12,
       "lufs": -19.17,
@@ -2064,7 +4116,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "medium",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "epic"
+      ],
+      "styles": [
+        "electronic",
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Vaporwave",
+        "Electronic---Dubstep"
+      ],
       "loopable": true,
       "durationS": 60.63,
       "lufs": -15.96,
@@ -2080,7 +4150,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 150,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "F major",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting",
+        "happy"
+      ],
+      "styles": [
+        "rock",
+        "acoustic",
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 64,
       "lufs": -14,
@@ -2096,7 +4184,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 110,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "playful"
+      ],
+      "styles": [
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Deep House",
+        "Electronic---Downtempo",
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 69.82,
       "lufs": -14.9,
@@ -2112,7 +4217,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Deep House",
+        "Electronic---House",
+        "Electronic---Techno"
+      ],
       "loopable": true,
       "durationS": 224,
       "lufs": -13.79,
@@ -2128,7 +4250,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 98,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "uplifting"
+      ],
+      "styles": [
+        "lofi",
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 44.08,
       "lufs": -15.64,
@@ -2144,7 +4284,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 171,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "dreamy"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 45.18,
       "lufs": -13.4,
@@ -2160,7 +4317,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "funk",
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Acid Jazz",
+        "Electronic---Future Jazz"
+      ],
       "loopable": true,
       "durationS": 70.59,
       "lufs": -14.94,
@@ -2176,7 +4351,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "groovy"
+      ],
+      "styles": [
+        "funk",
+        "lofi",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Chillwave",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 44.02,
       "lufs": -15.13,
@@ -2192,7 +4386,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "F minor",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [],
+      "styles": [
+        "ambient",
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 20.87,
       "lufs": -15.18,
@@ -2208,7 +4417,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "F minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy"
+      ],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---IDM"
+      ],
       "loopable": true,
       "durationS": 20.87,
       "lufs": -15.9,
@@ -2224,7 +4449,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "F minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Breakcore",
+        "Electronic---Drum n Bass",
+        "Electronic---Chiptune"
+      ],
       "loopable": true,
       "durationS": 20.87,
       "lufs": -13.49,
@@ -2240,7 +4481,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "F minor",
+      "energy": "medium",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "mysterious"
+      ],
+      "styles": [
+        "piano",
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Classical---Neo-Classical",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 20.87,
       "lufs": -15.39,
@@ -2256,7 +4515,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "F minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "playful"
+      ],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Breakcore",
+        "Electronic---Drum n Bass",
+        "Electronic---Happy Hardcore"
+      ],
       "loopable": true,
       "durationS": 20.87,
       "lufs": -14.53,
@@ -2272,7 +4548,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 128,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G major",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Techno",
+        "Electronic---Electro",
+        "Electronic---EBM"
+      ],
       "loopable": true,
       "durationS": 75,
       "lufs": -13.89,
@@ -2288,7 +4580,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 86,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "calm",
+      "moods": [
+        "calm",
+        "mysterious"
+      ],
+      "styles": [
+        "lofi",
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 33.39,
       "lufs": -13.74,
@@ -2304,7 +4614,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 116,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "mysterious"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 33.39,
       "lufs": -14.84,
@@ -2320,7 +4647,18 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 156,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "playful",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 119.23,
       "lufs": -19.83,
@@ -2336,7 +4674,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 155,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "calm",
+      "moods": [],
+      "styles": [
+        "lounge",
+        "cinematic"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Jazz---Easy Listening"
+      ],
       "loopable": true,
       "durationS": 119.23,
       "lufs": -19.28,
@@ -2352,7 +4704,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 161,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 99,
       "lufs": -10.24,
@@ -2368,7 +4737,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 115,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "chiptune",
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Synth-pop",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 52.17,
       "lufs": -10.04,
@@ -2384,7 +4771,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 105,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Synth-pop"
+      ],
       "loopable": true,
       "durationS": 96.01,
       "lufs": -12.11,
@@ -2400,7 +4803,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 154,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack"
+      ],
       "loopable": true,
       "durationS": 105.97,
       "lufs": -10.04,
@@ -2416,7 +4834,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Experimental",
+        "Electronic---Drum n Bass",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 70.59,
       "lufs": -9.86,
@@ -2432,7 +4866,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "rock",
+        "electronic",
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Experimental",
+        "Electronic---Electro",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 70.6,
       "lufs": -13.16,
@@ -2448,7 +4900,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 103,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "happy"
+      ],
+      "styles": [
+        "synthwave",
+        "chiptune",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Synth-pop",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 128.16,
       "lufs": -9.4,
@@ -2464,7 +4935,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 182,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "D minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Happy Hardcore",
+        "Electronic---Hardcore"
+      ],
       "loopable": true,
       "durationS": 61.34,
       "lufs": -9.79,
@@ -2480,7 +4967,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 151,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Experimental",
+        "Stage & Screen---Soundtrack"
+      ],
       "loopable": true,
       "durationS": 35.3,
       "lufs": -9.99,
@@ -2496,7 +4997,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 125,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune"
+      ],
       "loopable": true,
       "durationS": 61.43,
       "lufs": -10.65,
@@ -2512,7 +5025,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune"
+      ],
       "loopable": true,
       "durationS": 65.16,
       "lufs": -11.16,
@@ -2528,7 +5053,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune"
+      ],
       "loopable": true,
       "durationS": 53.34,
       "lufs": -9.78,
@@ -2544,7 +5081,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack",
+        "Electronic---Synth-pop"
+      ],
       "loopable": true,
       "durationS": 53.33,
       "lufs": -8.63,
@@ -2560,7 +5114,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 150,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack",
+        "Electronic---IDM"
+      ],
       "loopable": true,
       "durationS": 89.61,
       "lufs": -10.4,
@@ -2576,7 +5144,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 150,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack",
+        "Electronic---IDM"
+      ],
       "loopable": true,
       "durationS": 89.61,
       "lufs": -10.44,
@@ -2592,7 +5174,20 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack"
+      ],
       "loopable": true,
       "durationS": 91.21,
       "lufs": -10.41,
@@ -2608,7 +5203,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "Bb minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 45.47,
       "lufs": -12.1,
@@ -2624,7 +5234,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack"
+      ],
       "loopable": true,
       "durationS": 90.93,
       "lufs": -9.87,
@@ -2640,7 +5265,20 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 150,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "D major",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack"
+      ],
       "loopable": true,
       "durationS": 76.81,
       "lufs": -8.13,
@@ -2656,7 +5294,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 150,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Experimental",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 102.41,
       "lufs": -9.47,
@@ -2672,7 +5324,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 150,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 44.8,
       "lufs": -9.65,
@@ -2688,7 +5354,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 143,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.18,
@@ -2704,7 +5385,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 71,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "G major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.36,
@@ -2720,7 +5417,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 71,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "C major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "lounge",
+        "jazz"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.22,
@@ -2736,7 +5449,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 71,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.36,
@@ -2752,7 +5481,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 94,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "lounge",
+        "acoustic",
+        "jazz"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Fusion"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.73,
@@ -2768,7 +5515,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 71,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "C major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.17,
@@ -2784,7 +5547,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 94,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "lounge",
+        "piano",
+        "jazz"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.3,
@@ -2800,7 +5580,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.84,
@@ -2816,7 +5613,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 96,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "piano",
+        "lounge",
+        "jazz"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.23,
@@ -2832,7 +5646,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 143,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "F major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.29,
@@ -2848,7 +5678,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 94,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.77,
@@ -2864,7 +5711,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.33,
@@ -2880,7 +5743,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 71,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "D major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Avant-garde Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.3,
@@ -2896,7 +5775,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 94,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Avant-garde Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -20.5,
@@ -2912,7 +5808,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 143,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -20.54,
@@ -2928,7 +5840,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D major",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "romantic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -20.87,
@@ -2944,7 +5873,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.86,
@@ -2960,7 +5906,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 94,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.43,
@@ -2976,7 +5938,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "piano",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -20.56,
@@ -2992,7 +5971,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Avant-garde Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.9,
@@ -3008,7 +6004,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 71,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "E minor",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "romantic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Avant-garde Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.47,
@@ -3024,7 +6038,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "piano",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -17.87,
@@ -3040,7 +6071,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -17.63,
@@ -3056,7 +6103,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.88,
@@ -3072,7 +6136,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.5,
@@ -3088,7 +6169,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "piano",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.43,
@@ -3104,7 +6202,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "piano",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.48,
@@ -3120,7 +6235,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.26,
@@ -3136,7 +6267,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "medium",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -17.86,
@@ -3152,7 +6300,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "lounge",
+        "jazz",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.92,
@@ -3168,7 +6333,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Avant-garde Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.97,
@@ -3184,7 +6366,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18,
@@ -3200,7 +6399,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "lounge",
+        "jazz",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -17.95,
@@ -3216,7 +6432,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Avant-garde Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.9,
@@ -3232,7 +6466,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "lounge",
+        "jazz",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.6,
@@ -3248,7 +6499,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic"
+      ],
+      "styles": [
+        "lounge",
+        "jazz",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.04,
@@ -3264,7 +6531,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Avant-garde Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.39,
@@ -3280,7 +6565,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "romantic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Avant-garde Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.23,
@@ -3296,7 +6599,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.29,
@@ -3312,7 +6632,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Avant-garde Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.88,
@@ -3328,7 +6662,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -20.17,
@@ -3344,7 +6695,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "lounge",
+        "jazz",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.86,
@@ -3360,7 +6728,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.98,
@@ -3376,7 +6761,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.11,
@@ -3392,7 +6793,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 96,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "piano",
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -20.4,
@@ -3408,7 +6826,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.5,
@@ -3424,7 +6859,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "B minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz",
+        "Jazz---Avant-garde Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.57,
@@ -3440,7 +6893,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "medium",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -17.99,
@@ -3456,7 +6926,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19.17,
@@ -3472,7 +6959,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "lounge",
+        "jazz",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -19,
@@ -3488,7 +6992,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.81,
@@ -3504,7 +7025,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge",
+        "piano"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.3,
@@ -3520,7 +7058,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D major",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.66,
@@ -3536,7 +7089,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "low",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "melancholic"
+      ],
+      "styles": [
+        "jazz",
+        "lounge"
+      ],
+      "genres": [
+        "Jazz---Contemporary Jazz"
+      ],
       "loopable": true,
       "durationS": 40.42,
       "lufs": -18.61,
@@ -3552,7 +7121,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 75,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "Ab major",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "epic"
+      ],
+      "styles": [
+        "orchestral",
+        "piano",
+        "cinematic"
+      ],
+      "genres": [
+        "Classical---Modern",
+        "Classical---Contemporary",
+        "Classical---Neo-Classical"
+      ],
       "loopable": true,
       "durationS": 39,
       "lufs": -17.79,
@@ -3568,7 +7156,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 69,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "G minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "funk",
+        "lofi",
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Chillwave",
+        "Electronic---Downtempo",
+        "Electronic---Synthwave"
+      ],
       "loopable": true,
       "durationS": 20.87,
       "lufs": -18.72,
@@ -3584,7 +7190,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy"
+      ],
+      "styles": [
+        "synthwave",
+        "lofi",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 19.2,
       "lufs": -15.91,
@@ -3600,7 +7224,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "high",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting"
+      ],
+      "styles": [
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Deep House",
+        "Electronic---House",
+        "Electronic---Techno"
+      ],
       "loopable": true,
       "durationS": 16,
       "lufs": -13.5,
@@ -3616,7 +7256,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "melancholic"
+      ],
+      "styles": [
+        "acoustic",
+        "rock"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 30.33,
       "lufs": -17.81,
@@ -3632,7 +7288,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 164,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "D minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "happy"
+      ],
+      "styles": [
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Synthwave",
+        "Electronic---Synth-pop",
+        "Electronic---Chiptune"
+      ],
       "loopable": true,
       "durationS": 23.41,
       "lufs": -12.19,
@@ -3648,7 +7321,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "Eb major",
+      "energy": "medium",
+      "mood": "epic",
+      "moods": [],
+      "styles": [
+        "rock",
+        "acoustic",
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Synth-pop"
+      ],
       "loopable": true,
       "durationS": 21.36,
       "lufs": -19.22,
@@ -3664,7 +7351,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 125,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "happy"
+      ],
+      "styles": [
+        "dance"
+      ],
+      "genres": [
+        "Electronic---House",
+        "Electronic---Deep House",
+        "Electronic---Tech House"
+      ],
       "loopable": true,
       "durationS": 15.24,
       "lufs": -11.35,
@@ -3680,7 +7384,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 128,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "energetic"
+      ],
+      "styles": [
+        "synthwave",
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Berlin-School",
+        "Electronic---Synth-pop",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 15,
       "lufs": -11.97,
@@ -3696,7 +7419,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 110,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "high",
+      "mood": "epic",
+      "moods": [],
+      "styles": [
+        "folk",
+        "rock",
+        "cinematic"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Folk, World, & Country---Folk",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 17.3,
       "lufs": -12.6,
@@ -3712,7 +7451,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 160,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "G minor",
+      "energy": "medium",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "tense"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Experimental",
+        "Electronic---Ambient",
+        "Electronic---Musique Concrète"
+      ],
       "loopable": true,
       "durationS": 21.33,
       "lufs": -16.86,
@@ -3728,7 +7484,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 106,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "tense"
+      ],
+      "styles": [
+        "cinematic",
+        "orchestral",
+        "medieval"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Classical---Neo-Classical"
+      ],
       "loopable": true,
       "durationS": 23,
       "lufs": -16.95,
@@ -3744,7 +7518,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 99,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "Ab major",
+      "energy": "medium",
+      "mood": "playful",
+      "moods": [],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Electro",
+        "Electronic---Experimental",
+        "Electronic---IDM"
+      ],
       "loopable": true,
       "durationS": 19.33,
       "lufs": -16.53,
@@ -3760,7 +7548,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 115,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [],
+      "styles": [
+        "synthwave",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Berlin-School",
+        "Electronic---Synthwave",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 19.31,
       "lufs": -11.69,
@@ -3776,7 +7579,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 155,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "D minor",
+      "energy": "medium",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "tense"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Experimental",
+        "Electronic---Ambient",
+        "Non-Music---Field Recording"
+      ],
       "loopable": true,
       "durationS": 25.71,
       "lufs": -23.87,
@@ -3792,7 +7610,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 155,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "low",
+      "mood": "tense",
+      "moods": [
+        "tense"
+      ],
+      "styles": [
+        "cinematic",
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Berlin-School"
+      ],
       "loopable": true,
       "durationS": 29.5,
       "lufs": -22.02,
@@ -3808,7 +7642,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 111,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [],
+      "styles": [
+        "synthwave",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Electro",
+        "Electronic---Ambient",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 34.05,
       "lufs": -17.9,
@@ -3824,7 +7673,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 109,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "low",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "tense"
+      ],
+      "styles": [
+        "orchestral",
+        "cinematic",
+        "piano"
+      ],
+      "genres": [
+        "Classical---Neo-Classical",
+        "Classical---Contemporary",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 30.63,
       "lufs": -18.3,
@@ -3840,7 +7708,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 125,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "mysterious"
+      ],
+      "styles": [
+        "piano",
+        "cinematic"
+      ],
+      "genres": [
+        "Classical---Contemporary",
+        "Classical---Neo-Classical",
+        "Classical---Modern"
+      ],
       "loopable": true,
       "durationS": 113.13,
       "lufs": -16.11,
@@ -3856,7 +7742,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Bassline",
+        "Electronic---UK Garage",
+        "Electronic---Breakbeat"
+      ],
       "loopable": true,
       "durationS": 41.14,
       "lufs": -9.78,
@@ -3872,7 +7774,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 121,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "dreamy",
+      "moods": [],
+      "styles": [
+        "synthwave",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Electro",
+        "Electronic---Synth-pop",
+        "Electronic---Berlin-School"
+      ],
       "loopable": true,
       "durationS": 16,
       "lufs": -14.58,
@@ -3888,7 +7805,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 154,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "D minor",
+      "energy": "high",
+      "mood": "tense",
+      "moods": [
+        "tense",
+        "dark"
+      ],
+      "styles": [
+        "cinematic",
+        "orchestral"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 40,
       "lufs": -14.37,
@@ -3904,7 +7838,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 130,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "B minor",
+      "energy": "medium",
+      "mood": "dark",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Techno",
+        "Electronic---Electro",
+        "Electronic---Bleep"
+      ],
       "loopable": true,
       "durationS": 29.54,
       "lufs": -13.57,
@@ -3920,7 +7866,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 110,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "F minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Deep House",
+        "Electronic---Tropical House",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 17.45,
       "lufs": -12.18,
@@ -3936,7 +7894,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 80,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting",
+        "dreamy"
+      ],
+      "styles": [
+        "rock",
+        "folk",
+        "jazz"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 24,
       "lufs": -13.27,
@@ -3952,7 +7929,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 113,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G minor",
+      "energy": "medium",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "uplifting"
+      ],
+      "styles": [
+        "orchestral",
+        "cinematic",
+        "medieval"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 28.93,
       "lufs": -14.97,
@@ -3968,7 +7962,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 146,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G minor",
+      "energy": "medium",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "uplifting"
+      ],
+      "styles": [
+        "orchestral",
+        "medieval"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 19.73,
       "lufs": -13.79,
@@ -3984,7 +7994,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "Eb major",
+      "energy": "high",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting",
+        "happy"
+      ],
+      "styles": [
+        "acoustic",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 37.33,
       "lufs": -10.38,
@@ -4000,7 +8028,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 128,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "happy",
+      "moods": [],
+      "styles": [
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Synth-pop",
+        "Electronic---Electro",
+        "Electronic---Electroclash"
+      ],
       "loopable": true,
       "durationS": 30,
       "lufs": -15.62,
@@ -4016,7 +8058,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 70,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "C major",
+      "energy": "low",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "tense"
+      ],
+      "styles": [
+        "orchestral",
+        "piano",
+        "cinematic"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 27.43,
       "lufs": -14.31,
@@ -4032,7 +8091,20 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Stage & Screen---Soundtrack"
+      ],
       "loopable": true,
       "durationS": 10.67,
       "lufs": -10.55,
@@ -4048,7 +8120,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G major",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Glitch",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 27.43,
       "lufs": -16.15,
@@ -4064,7 +8150,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 27.43,
       "lufs": -17.35,
@@ -4080,7 +8178,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G major",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Minimal"
+      ],
       "loopable": true,
       "durationS": 27.43,
       "lufs": -16.23,
@@ -4096,7 +8206,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "medium",
+      "mood": "playful",
+      "moods": [
+        "playful"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Synth-pop",
+        "Electronic---Electro"
+      ],
       "loopable": true,
       "durationS": 24,
       "lufs": -17.24,
@@ -4112,7 +8238,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 0,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "groovy"
+      ],
+      "styles": [
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 8.35,
       "lufs": -17.93,
@@ -4128,7 +8270,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 0,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "happy"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Chiptune",
+        "Electronic---Electro",
+        "Electronic---Bassline"
+      ],
       "loopable": true,
       "durationS": 8.35,
       "lufs": -15.51,
@@ -4144,7 +8303,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 0,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "G major",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---House",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 8.35,
       "lufs": -15.78,
@@ -4160,7 +8336,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 115,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Electro",
+        "Electronic---Synth-pop",
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 8.35,
       "lufs": -16.95,
@@ -4176,7 +8370,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [],
+      "styles": [
+        "piano",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Chillwave",
+        "Electronic---Ambient",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 48,
       "lufs": -12.52,
@@ -4192,7 +8401,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 152,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "E minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "funk"
+      ],
+      "genres": [
+        "Hip Hop---Gangsta",
+        "Hip Hop---G-Funk",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 25.26,
       "lufs": -15.78,
@@ -4208,7 +8433,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 76,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "G major",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy",
+        "happy"
+      ],
+      "styles": [
+        "funk"
+      ],
+      "genres": [
+        "Hip Hop---Gangsta",
+        "Electronic---Downtempo",
+        "Hip Hop---G-Funk"
+      ],
       "loopable": true,
       "durationS": 25.26,
       "lufs": -15.69,
@@ -4224,7 +8466,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 152,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "F major",
+      "energy": "medium",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "groovy"
+      ],
+      "styles": [
+        "funk"
+      ],
+      "genres": [
+        "Hip Hop---Gangsta",
+        "Hip Hop---G-Funk",
+        "Hip Hop---Bounce"
+      ],
       "loopable": true,
       "durationS": 25.26,
       "lufs": -15.93,
@@ -4240,7 +8499,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 94,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "dark",
+      "moods": [
+        "dark"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 32.84,
       "lufs": -15.27,
@@ -4256,7 +8530,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "tense",
+      "moods": [
+        "tense",
+        "dark"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Berlin-School"
+      ],
       "loopable": true,
       "durationS": 32.84,
       "lufs": -15.07,
@@ -4272,7 +8563,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "tense"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Berlin-School",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 32.84,
       "lufs": -13.57,
@@ -4288,7 +8596,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 135,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G major",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "happy"
+      ],
+      "styles": [
+        "dance",
+        "electronic",
+        "synthwave"
+      ],
+      "genres": [
+        "Electronic---Trance",
+        "Electronic---Euro House",
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 14.22,
       "lufs": -12.04,
@@ -4304,7 +8631,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 135,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G major",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "happy"
+      ],
+      "styles": [
+        "dance",
+        "synthwave",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Trance",
+        "Electronic---Synth-pop",
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 14.22,
       "lufs": -11.64,
@@ -4320,7 +8666,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 88,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "G major",
+      "energy": "high",
+      "mood": "dreamy",
+      "moods": [],
+      "styles": [
+        "lofi",
+        "dance",
+        "acoustic"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Chillwave",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 21.82,
       "lufs": -14.91,
@@ -4336,7 +8698,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 0,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "F major",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "dance",
+        "electronic",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Chillwave",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 10.91,
       "lufs": -16.83,
@@ -4352,7 +8730,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 150,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A major",
+      "energy": "high",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "playful"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Chillwave",
+        "Pop---J-pop"
+      ],
       "loopable": true,
       "durationS": 12.8,
       "lufs": -11.54,
@@ -4368,7 +8761,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 150,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "E major",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Glitch"
+      ],
       "loopable": true,
       "durationS": 12.8,
       "lufs": -13.36,
@@ -4384,7 +8791,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 113,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy",
+        "playful"
+      ],
+      "styles": [
+        "funk"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Deep House",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 16.99,
       "lufs": -14.73,
@@ -4400,7 +8824,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 113,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "groovy"
+      ],
+      "styles": [
+        "funk",
+        "acoustic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Deep House",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 16.99,
       "lufs": -14.58,
@@ -4416,7 +8859,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 79,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "F major",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "funk",
+        "jazz",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Deep House",
+        "Electronic---Jazzdance"
+      ],
       "loopable": true,
       "durationS": 24.3,
       "lufs": -13.75,
@@ -4432,7 +8893,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 157,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A major",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient",
+        "Electronic---Trip Hop"
+      ],
       "loopable": true,
       "durationS": 24.3,
       "lufs": -11.58,
@@ -4448,7 +8923,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 79,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "F major",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy",
+        "playful"
+      ],
+      "styles": [
+        "funk",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Future Jazz",
+        "Electronic---Deep House"
+      ],
       "loopable": true,
       "durationS": 12.15,
       "lufs": -14.18,
@@ -4464,7 +8957,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 77,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "B minor",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [
+        "calm",
+        "romantic"
+      ],
+      "styles": [
+        "acoustic",
+        "medieval",
+        "folk"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 36.85,
       "lufs": -14.54,
@@ -4480,7 +8991,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 116,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "B minor",
+      "energy": "medium",
+      "mood": "dark",
+      "moods": [],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 33.42,
       "lufs": -12.4,
@@ -4496,7 +9021,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 106,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "low",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "tense"
+      ],
+      "styles": [
+        "ambient",
+        "cinematic",
+        "orchestral"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 36,
       "lufs": -16.25,
@@ -4512,7 +9056,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 161,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "E minor",
+      "energy": "medium",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "tense"
+      ],
+      "styles": [
+        "rock",
+        "ambient",
+        "cinematic"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 36,
       "lufs": -14.6,
@@ -4528,7 +9091,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 30,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "G major",
+      "energy": "low",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "mysterious"
+      ],
+      "styles": [
+        "ambient",
+        "orchestral",
+        "rock"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Dungeon Synth",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 69.87,
       "lufs": -16.03,
@@ -4544,7 +9126,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 30,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "D major",
+      "energy": "low",
+      "mood": "dark",
+      "moods": [
+        "dark",
+        "mysterious"
+      ],
+      "styles": [
+        "ambient",
+        "orchestral"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Dungeon Synth",
+        "Electronic---Experimental"
+      ],
       "loopable": true,
       "durationS": 65.49,
       "lufs": -16.49,
@@ -4560,7 +9160,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "B minor",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting",
+        "energetic"
+      ],
+      "styles": [
+        "synthwave",
+        "acoustic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Euro House",
+        "Electronic---Hands Up"
+      ],
       "loopable": true,
       "durationS": 27.43,
       "lufs": -14.49,
@@ -4576,7 +9195,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 129,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G major",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "funk"
+      ],
+      "genres": [
+        "Electronic---Vaporwave",
+        "Electronic---Ambient",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 15,
       "lufs": -15.95,
@@ -4592,7 +9225,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 128,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "F major",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [
+        "calm",
+        "dreamy"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---New Age"
+      ],
       "loopable": true,
       "durationS": 30,
       "lufs": -14.36,
@@ -4608,7 +9258,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 129,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "E minor",
+      "energy": "high",
+      "mood": "dreamy",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---Techno",
+        "Electronic---Electro",
+        "Electronic---House"
+      ],
       "loopable": true,
       "durationS": 15,
       "lufs": -13.44,
@@ -4624,7 +9286,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 128,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "B minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---House",
+        "Electronic---Electro",
+        "Electronic---Dance-pop"
+      ],
       "loopable": true,
       "durationS": 15,
       "lufs": -12.01,
@@ -4640,7 +9320,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 85,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "G major",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "funk",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---House",
+        "Electronic---Downtempo",
+        "Electronic---Deep House"
+      ],
       "loopable": true,
       "durationS": 22.59,
       "lufs": -13.74,
@@ -4656,7 +9353,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 54,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "A major",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic"
+      ],
+      "styles": [
+        "piano"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Stage & Screen---Soundtrack",
+        "Classical---Neo-Classical"
+      ],
       "loopable": true,
       "durationS": 26.4,
       "lufs": -17.63,
@@ -4672,7 +9385,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 57,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "A major",
+      "energy": "low",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic"
+      ],
+      "styles": [
+        "piano"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Stage & Screen---Soundtrack",
+        "Classical---Neo-Classical"
+      ],
       "loopable": true,
       "durationS": 28.2,
       "lufs": -18.45,
@@ -4688,7 +9417,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "happy"
+      ],
+      "styles": [
+        "dance"
+      ],
+      "genres": [
+        "Electronic---House",
+        "Electronic---Tropical House",
+        "Electronic---Deep House"
+      ],
       "loopable": true,
       "durationS": 32,
       "lufs": -12.6,
@@ -4704,7 +9450,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 144,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [
+        "calm",
+        "dreamy"
+      ],
+      "styles": [
+        "ambient",
+        "medieval",
+        "orchestral"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age",
+        "Electronic---Berlin-School"
+      ],
       "loopable": true,
       "durationS": 53.33,
       "lufs": -13.71,
@@ -4720,7 +9485,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 144,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "calm",
+      "moods": [
+        "calm",
+        "mysterious"
+      ],
+      "styles": [
+        "ambient",
+        "medieval",
+        "orchestral"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 26.67,
       "lufs": -13.64,
@@ -4736,7 +9520,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 83,
+      "bpmConfident": true,
+      "tempo": "slow",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "funk",
+        "lofi",
+        "acoustic"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Future Jazz",
+        "Electronic---Broken Beat"
+      ],
       "loopable": true,
       "durationS": 43.37,
       "lufs": -14.8,
@@ -4752,7 +9554,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 92,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "funk"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Hip Hop---G-Funk",
+        "Hip Hop---Gangsta"
+      ],
       "loopable": true,
       "durationS": 20.87,
       "lufs": -16.41,
@@ -4768,7 +9584,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 123,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [],
+      "styles": [
+        "funk"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Hip Hop---G-Funk",
+        "Hip Hop---Gangsta"
+      ],
       "loopable": true,
       "durationS": 20.87,
       "lufs": -16.45,
@@ -4784,7 +9614,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "medium",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "happy"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---Electro",
+        "Electronic---Chiptune",
+        "Electronic---IDM"
+      ],
       "loopable": true,
       "durationS": 25.26,
       "lufs": -15.97,
@@ -4800,7 +9647,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 95,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful"
+      ],
+      "styles": [
+        "chiptune"
+      ],
+      "genres": [
+        "Electronic---IDM",
+        "Electronic---Chiptune",
+        "Electronic---Glitch"
+      ],
       "loopable": true,
       "durationS": 22.74,
       "lufs": -14.59,
@@ -4816,7 +9679,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 110,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting",
+        "calm"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient",
+        "Electronic---Chillwave"
+      ],
       "loopable": true,
       "durationS": 17.45,
       "lufs": -12.67,
@@ -4832,7 +9710,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 118,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic",
+        "playful"
+      ],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---House",
+        "Electronic---Deep House",
+        "Electronic---Electro House"
+      ],
       "loopable": true,
       "durationS": 18.31,
       "lufs": -13.13,
@@ -4848,7 +9744,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 118,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "E minor",
+      "energy": "high",
+      "mood": "uplifting",
+      "moods": [],
+      "styles": [
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Deep House",
+        "Electronic---House",
+        "Electronic---Nu-Disco"
+      ],
       "loopable": true,
       "durationS": 18.31,
       "lufs": -12.97,
@@ -4864,7 +9774,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 130,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy"
+      ],
+      "styles": [
+        "ambient",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Chillwave",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 22.15,
       "lufs": -16.06,
@@ -4880,7 +9807,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 130,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "uplifting"
+      ],
+      "styles": [
+        "ambient",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Chillwave",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 25.85,
       "lufs": -16.2,
@@ -4896,7 +9841,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "D major",
+      "energy": "high",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "funk",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Future Jazz",
+        "Electronic---Broken Beat"
+      ],
       "loopable": true,
       "durationS": 61.33,
       "lufs": -14.07,
@@ -4912,7 +9874,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 145,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Trance",
+        "Electronic---Ambient",
+        "Electronic---Goa Trance"
+      ],
       "loopable": true,
       "durationS": 21.52,
       "lufs": -13.22,
@@ -4928,7 +9907,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 145,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "E minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Techno",
+        "Electronic---Electro",
+        "Electronic---Grime"
+      ],
       "loopable": true,
       "durationS": 21.52,
       "lufs": -13.08,
@@ -4944,7 +9939,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "funk"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 28.8,
       "lufs": -15.8,
@@ -4960,7 +9970,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "funk"
+      ],
+      "genres": [
+        "Electronic---Deep House",
+        "Electronic---Downtempo",
+        "Electronic---Future Jazz"
+      ],
       "loopable": true,
       "durationS": 19.2,
       "lufs": -15.18,
@@ -4976,7 +10002,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 155,
+      "bpmConfident": false,
+      "tempo": "fast",
+      "key": "A major",
+      "energy": "low",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "tense"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 34.7,
       "lufs": -21.51,
@@ -4992,7 +10035,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 100,
+      "bpmConfident": false,
+      "tempo": "medium",
+      "key": "D minor",
+      "energy": "low",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "calm"
+      ],
+      "styles": [
+        "ambient"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 49.35,
       "lufs": -22.72,
@@ -5008,7 +10068,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "tense"
+      ],
+      "styles": [
+        "ambient",
+        "medieval"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo",
+        "Electronic---Berlin-School"
+      ],
       "loopable": true,
       "durationS": 26.67,
       "lufs": -19.71,
@@ -5024,7 +10102,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 90,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "F major",
+      "energy": "medium",
+      "mood": "mysterious",
+      "moods": [
+        "mysterious",
+        "calm"
+      ],
+      "styles": [
+        "acoustic",
+        "piano"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 21.33,
       "lufs": -13.64,
@@ -5040,7 +10135,19 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 113,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G minor",
+      "energy": "high",
+      "mood": "dreamy",
+      "moods": [],
+      "styles": [],
+      "genres": [
+        "Electronic---IDM",
+        "Electronic---Ambient",
+        "Electronic---Glitch"
+      ],
       "loopable": true,
       "durationS": 33.68,
       "lufs": -13.19,
@@ -5056,7 +10163,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 115,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "dreamy",
+      "moods": [
+        "dreamy",
+        "uplifting"
+      ],
+      "styles": [
+        "synthwave",
+        "lofi"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---Chillwave",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 50.09,
       "lufs": -15.89,
@@ -5072,7 +10197,25 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 115,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "uplifting",
+      "moods": [
+        "uplifting"
+      ],
+      "styles": [
+        "dance",
+        "synthwave",
+        "acoustic"
+      ],
+      "genres": [
+        "Electronic---Chillwave",
+        "Electronic---Deep House",
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 50.09,
       "lufs": -15.95,
@@ -5088,7 +10231,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 103,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "epic",
+      "moods": [
+        "epic",
+        "mysterious"
+      ],
+      "styles": [
+        "medieval",
+        "acoustic",
+        "folk"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 31.76,
       "lufs": -22.48,
@@ -5104,7 +10264,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 102,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "C major",
+      "energy": "low",
+      "mood": "tense",
+      "moods": [
+        "tense",
+        "epic"
+      ],
+      "styles": [
+        "orchestral",
+        "cinematic",
+        "medieval"
+      ],
+      "genres": [
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 28.24,
       "lufs": -19.16,
@@ -5120,7 +10297,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "E major",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Goa Trance",
+        "Electronic---Psy-Trance",
+        "Electronic---Progressive Trance"
+      ],
       "loopable": true,
       "durationS": 13.71,
       "lufs": -13.83,
@@ -5136,7 +10327,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "E minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Goa Trance",
+        "Electronic---Psy-Trance",
+        "Electronic---Progressive Trance"
+      ],
       "loopable": true,
       "durationS": 13.71,
       "lufs": -13.46,
@@ -5152,7 +10357,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 0,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Goa Trance",
+        "Electronic---Trance",
+        "Electronic---Psy-Trance"
+      ],
       "loopable": true,
       "durationS": 5.14,
       "lufs": -12.4,
@@ -5168,7 +10390,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "E minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Goa Trance",
+        "Electronic---Psy-Trance",
+        "Electronic---Progressive Trance"
+      ],
       "loopable": true,
       "durationS": 13.71,
       "lufs": -13.52,
@@ -5184,7 +10423,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 0,
+      "bpmConfident": false,
+      "tempo": "slow",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "electronic",
+        "dance"
+      ],
+      "genres": [
+        "Electronic---Trance",
+        "Electronic---Goa Trance",
+        "Electronic---Hard Trance"
+      ],
       "loopable": true,
       "durationS": 5.14,
       "lufs": -12.07,
@@ -5200,7 +10456,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "medium",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "playful"
+      ],
+      "styles": [
+        "rock"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 28,
       "lufs": -15.77,
@@ -5216,7 +10488,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 120,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "G major",
+      "energy": "medium",
+      "mood": "happy",
+      "moods": [
+        "happy",
+        "playful"
+      ],
+      "styles": [
+        "rock",
+        "funk"
+      ],
+      "genres": [
+        "Electronic---Downtempo",
+        "Electronic---Ambient"
+      ],
       "loopable": true,
       "durationS": 28,
       "lufs": -15.85,
@@ -5232,7 +10521,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Trance",
+        "Electronic---Progressive Trance",
+        "Electronic---Euro House"
+      ],
       "loopable": true,
       "durationS": 27.43,
       "lufs": -12.91,
@@ -5248,7 +10554,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 140,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [
+        "energetic"
+      ],
+      "styles": [
+        "dance",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Trance",
+        "Electronic---Progressive Trance",
+        "Electronic---Tech Trance"
+      ],
       "loopable": true,
       "durationS": 6.86,
       "lufs": -13.19,
@@ -5264,7 +10587,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 141,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "A minor",
+      "energy": "high",
+      "mood": "energetic",
+      "moods": [],
+      "styles": [
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Trance",
+        "Electronic---Tech Trance",
+        "Electronic---Progressive Trance"
+      ],
       "loopable": true,
       "durationS": 6.86,
       "lufs": -13.31,
@@ -5280,7 +10617,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 97,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "low",
+      "mood": "groovy",
+      "moods": [
+        "groovy"
+      ],
+      "styles": [
+        "lounge"
+      ],
+      "genres": [
+        "Electronic---Downtempo"
+      ],
       "loopable": true,
       "durationS": 14.77,
       "lufs": -17.15,
@@ -5296,7 +10647,22 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 97,
+      "bpmConfident": true,
+      "tempo": "medium",
+      "key": "A minor",
+      "energy": "medium",
+      "mood": "romantic",
+      "moods": [
+        "romantic",
+        "groovy"
+      ],
+      "styles": [
+        "acoustic",
+        "folk",
+        "rock"
+      ],
+      "genres": [],
       "loopable": true,
       "durationS": 29.54,
       "lufs": -15.69,
@@ -5312,7 +10678,23 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 150,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "G major",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [
+        "chiptune",
+        "electronic"
+      ],
+      "genres": [
+        "Electronic---Chiptune"
+      ],
       "loopable": true,
       "durationS": 25.6,
       "lufs": -13.25,
@@ -5328,7 +10710,21 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 151,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "E minor",
+      "energy": "high",
+      "mood": "playful",
+      "moods": [
+        "playful",
+        "energetic"
+      ],
+      "styles": [],
+      "genres": [
+        "Electronic---Electro",
+        "Electronic---Synth-pop"
+      ],
       "loopable": true,
       "durationS": 12.8,
       "lufs": -13.45,
@@ -5344,7 +10740,24 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 139,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "romantic"
+      ],
+      "styles": [
+        "piano",
+        "medieval"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Stage & Screen---Soundtrack"
+      ],
       "loopable": true,
       "durationS": 25.09,
       "lufs": -13.82,
@@ -5360,7 +10773,26 @@
       "license": "CC0-1.0",
       "attribution": "",
       "source": "tallbeard",
-      "mood": "",
+      "bpm": 139,
+      "bpmConfident": true,
+      "tempo": "fast",
+      "key": "C major",
+      "energy": "medium",
+      "mood": "melancholic",
+      "moods": [
+        "melancholic",
+        "romantic"
+      ],
+      "styles": [
+        "medieval",
+        "folk",
+        "piano"
+      ],
+      "genres": [
+        "Electronic---Ambient",
+        "Electronic---New Age",
+        "Stage & Screen---Soundtrack"
+      ],
       "loopable": true,
       "durationS": 25.3,
       "lufs": -13.97,

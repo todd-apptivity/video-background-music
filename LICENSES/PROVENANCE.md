@@ -80,19 +80,19 @@ Credit is given in `README.md` as a courtesy, not as a licence term.
 ## Analysis models
 
 `scripts/tag-tracks.py` writes `bpm`, `bpmConfident`, `tempo`, `key`,
-`energy`, `mood`, `tags` and `genres` into `manifest.json`. These are
+`energy`, `mood`, `moods`, `styles` and `genres` into `manifest.json`. These are
 measurements of the audio, not part of it. They come from:
 
 - **LAION-CLAP**, checkpoint `music_audioset_epoch_15_esc_90.14.pt`
-  (<https://huggingface.co/lukewys/laion_clap>). CC0 1.0. Scores the `mood`
-  and style `tags` against `scripts/tag-vocabulary.json`.
+  (<https://huggingface.co/lukewys/laion_clap>). CC0 1.0. Scores `mood`,
+  `moods` and `styles` against `scripts/tag-vocabulary.json`.
 - **Essentia models** by the Music Technology Group, Universitat Pompeu Fabra
   (<https://essentia.upf.edu/models.html>): Discogs-EffNet with its
   genre_discogs400, mtg_jamendo_moodtheme, mtg_jamendo_instrument, mood and
   danceability heads, and TempoCNN (deeptemp-k16). **CC BY-NC-SA 4.0**, which
   is free for non-commercial use with attribution; a commercial licence is
-  available from MTG on request. They give a second opinion on `mood` and
-  `tags`, one of three tempo estimates behind `bpm`, and all of `genres`
+  available from MTG on request. They give a second opinion on the moods and
+  styles, one of three tempo estimates behind `bpm`, and all of `genres`
   (Discogs style names, verbatim).
 - **Essentia** (AGPL-3.0) and **librosa** (ISC), as libraries: beat tracking,
   key detection and onset counting. Signal processing, no trained model.

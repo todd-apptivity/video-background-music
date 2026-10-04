@@ -22,7 +22,7 @@ WHAT IS MEASURED, AND WITH WHAT
 - Key and mode: Essentia's KeyExtractor (signal processing).
 - Energy: loudness (the manifest's `lufs`) plus note-onset density, ranked
   against the rest of the catalog and split into thirds.
-- Mood and style: two models, combined.
+- Mood and style (`mood`, `moods`, `styles`): two models, combined.
     * LAION-CLAP (music checkpoint, CC0), zero-shot: each tag's prompts are
       compared with the audio. This is what makes the vocabulary editable.
     * Essentia's Discogs-EffNet classifiers (genre, mood/theme, instrument,
@@ -80,10 +80,14 @@ BINARY_HEADS = ["mood_happy", "mood_sad", "mood_relaxed", "mood_aggressive", "mo
 CLAP_URL = "https://huggingface.co/lukewys/laion_clap/resolve/main/music_audioset_epoch_15_esc_90.14.pt"
 
 # Scoring thresholds, in catalog standard deviations. See "relative" above.
-MOOD_Z = 0.75
-STYLE_Z = 0.75
+MOOD_Z = 1.0
+STYLE_Z = 1.0
 MAX_MOODS = 2
 MAX_STYLES = 3
+# Both models must rate a track at least this far above average for a tag
+# they both score; a tag only CLAP scores needs this much on its own.
+AGREE_Z = 0.25
+CLAP_ONLY_Z = 1.25
 
 # Two tempo estimates "agree" within this ratio (4% is about 5 BPM at 120).
 BPM_AGREE = 0.04
@@ -91,7 +95,7 @@ TEMPO_BANDS = [(90, "slow"), (125, "medium"), (float("inf"), "fast")]
 
 # The fields this script owns. sync-upstream carries them forward for tracks
 # whose bytes did not change; keep the two lists in step.
-OWNED_FIELDS = ["bpm", "bpmConfident", "tempo", "key", "energy", "mood", "tags", "genres"]
+OWNED_FIELDS = ["bpm", "bpmConfident", "tempo", "key", "energy", "mood", "moods", "styles", "genres"]
 
 
 def log(message=""):
@@ -291,42 +295,58 @@ def zscore(matrix):
     return (matrix - matrix.mean(axis=0)) / np.where(std > 0, std, 1)
 
 
-def essentia_evidence(analysis, mapping):
-    """The strongest of a tag's mapped Essentia classes, or None if it has none."""
-    best = None
-    for family, names in mapping.items():
-        scores = analysis["essentia"][family]
-        for name in names:
-            if name.endswith("*"):
-                matched = [p for c, p in scores.items() if c.startswith(name[:-1])]
-            else:
-                if name not in scores:
-                    raise SystemExit(f"  vocabulary names unknown {family} class {name!r}")
-                matched = [scores[name]]
-            for p in matched:
-                best = p if best is None else max(best, p)
-    return best
+def essentia_class(analysis, family, name):
+    """One mapped class's probability. A name ending in * is the strongest class with that prefix."""
+    scores = analysis["essentia"][family]
+    if name.endswith("*"):
+        return max(p for c, p in scores.items() if c.startswith(name[:-1]))
+    if name not in scores:
+        raise SystemExit(f"  vocabulary names unknown {family} class {name!r}")
+    return scores[name]
+
+
+def essentia_z(tracks, analyses, mapping):
+    """A tag's Essentia vote: each mapped class standardised across the catalog, then averaged.
+
+    Standardising first matters. The classes have very different base rates
+    (a binary mood head averages ~0.15, a Discogs genre ~0.01), and a raw max
+    or mean would let the commonest class drown out the rest.
+    """
+    columns = [
+        np.array([essentia_class(analyses[t["id"]], family, name) for t in tracks])
+        for family, names in mapping.items()
+        for name in names
+    ]
+    return zscore(zscore(np.stack(columns, axis=1)).mean(axis=1, keepdims=True))[:, 0]
 
 
 def score_axis(tracks, analyses, vocabulary, embeddings, axis):
-    """Catalog-relative score for every (track, tag) on one axis."""
+    """For one axis: the tags, each (track, tag) score, and whether the tag may be applied at all.
+
+    A tag with Essentia classes may only be applied when both models put the
+    track above the catalog average for it. They are independent models, so a
+    tag they disagree on is one neither should be trusted for. A tag CLAP
+    alone scores has no second opinion and must clear a higher bar instead.
+    """
     tags = list(vocabulary[axis])
     audio = np.array([analyses[t["id"]]["clap"] for t in tracks])
     text = np.array([embeddings[axis][tag] for tag in tags])
     clap_z = zscore(audio @ text.T)
     combined = clap_z.copy()
+    allowed = clap_z >= CLAP_ONLY_Z
     for j, tag in enumerate(tags):
         mapping = vocabulary[axis][tag].get("essentia")
         if not mapping:
             continue
-        evidence = np.array([essentia_evidence(analyses[t["id"]], mapping) for t in tracks])
-        combined[:, j] = (clap_z[:, j] + zscore(evidence[:, None])[:, 0]) / 2
-    return tags, zscore(combined), clap_z
+        es_z = essentia_z(tracks, analyses, mapping)
+        combined[:, j] = zscore(((clap_z[:, j] + es_z) / 2)[:, None])[:, 0]
+        allowed[:, j] = (clap_z[:, j] >= AGREE_Z) & (es_z >= AGREE_Z)
+    return tags, combined, allowed
 
 
-def pick(row, tags, threshold, limit):
+def pick(row, allowed, tags, threshold, limit):
     order = np.argsort(-row)
-    return [tags[i] for i in order[:limit] if row[i] >= threshold]
+    return [tags[i] for i in order if row[i] >= threshold and allowed[i]][:limit]
 
 
 def resolve_bpm(features):
@@ -341,8 +361,8 @@ def resolve_bpm(features):
 
 
 def tag(tracks, analyses, vocabulary, embeddings):
-    mood_tags, mood_z, _ = score_axis(tracks, analyses, vocabulary, embeddings, "mood")
-    style_tags, style_z, _ = score_axis(tracks, analyses, vocabulary, embeddings, "style")
+    mood_tags, mood_z, mood_ok = score_axis(tracks, analyses, vocabulary, embeddings, "mood")
+    style_tags, style_z, style_ok = score_axis(tracks, analyses, vocabulary, embeddings, "style")
 
     # Energy: louder and busier than the rest of the catalog. The manifest's
     # `lufs` is used when present; tracks without it rank on onsets alone.
@@ -357,8 +377,8 @@ def tag(tracks, analyses, vocabulary, embeddings):
         analysis = analyses[track["id"]]
         features = analysis["features"]
         bpm, confident = resolve_bpm(features)
-        moods = pick(mood_z[i], mood_tags, MOOD_Z, MAX_MOODS)
-        styles = pick(style_z[i], style_tags, STYLE_Z, MAX_STYLES)
+        moods = pick(mood_z[i], mood_ok[i], mood_tags, MOOD_Z, MAX_MOODS)
+        styles = pick(style_z[i], style_ok[i], style_tags, STYLE_Z, MAX_STYLES)
         genres = sorted(analysis["essentia"]["genre"].items(), key=lambda kv: -kv[1])
         out[track["id"]] = {
             "bpm": bpm,
@@ -366,9 +386,12 @@ def tag(tracks, analyses, vocabulary, embeddings):
             "tempo": next(name for limit, name in TEMPO_BANDS if bpm < limit),
             "key": f"{features['key']} {features['scale']}",
             "energy": "low" if energy[i] < low else "high" if energy[i] >= high else "medium",
-            # The single best mood, even when nothing clears the bar for `tags`.
-            "mood": mood_tags[int(np.argmax(mood_z[i]))],
-            "tags": moods + styles,
+            # The single best mood, set even when nothing clears the bar for
+            # `moods`: the best one both models agree on, or failing that the
+            # best combined score.
+            "mood": mood_tags[int(np.argmax(np.where(mood_ok[i], mood_z[i], -np.inf) if mood_ok[i].any() else mood_z[i]))],
+            "moods": moods,
+            "styles": styles,
             # Discogs style names, verbatim from Essentia's genre model.
             "genres": [name for name, p in genres[:3] if p >= 0.1],
         }
@@ -396,15 +419,15 @@ def report(tracks, tagged):
     for track in tracks:
         t = tagged[track["id"]]
         mark = " " if t["bpmConfident"] else "?"
-        print(f"  {track['id'][:44]:44} {t['bpm']:4}{mark} {t['tempo']:6} {t['energy']:6} {t['key']:9} {t['mood']:11} {', '.join(t['tags'])}")
-    tag_counts = Counter(tag for t in tagged.values() for tag in t["tags"])
+        print(f"  {track['id'][:44]:44} {t['bpm']:4}{mark} {t['tempo']:6} {t['energy']:6} {t['key']:9} {', '.join(t['moods']):24} {', '.join(t['styles'])}")
     print()
     print(f"  {len(tracks)} tracks, {sum(not t['bpmConfident'] for t in tagged.values())} with an unconfirmed bpm (marked ?)")
     print("  tempo:  " + ", ".join(f"{k} {v}" for k, v in Counter(t["tempo"] for t in tagged.values()).most_common()))
     print("  energy: " + ", ".join(f"{k} {v}" for k, v in Counter(t["energy"] for t in tagged.values()).most_common()))
     print("  mood:   " + ", ".join(f"{k} {v}" for k, v in Counter(t["mood"] for t in tagged.values()).most_common()))
-    print("  tags:   " + ", ".join(f"{k} {v}" for k, v in tag_counts.most_common()))
-    print(f"  untagged: {sum(not t['tags'] for t in tagged.values())}")
+    print("  moods:  " + ", ".join(f"{k} {v}" for k, v in Counter(m for t in tagged.values() for m in t["moods"]).most_common()))
+    print("  styles: " + ", ".join(f"{k} {v}" for k, v in Counter(s for t in tagged.values() for s in t["styles"]).most_common()))
+    print(f"  no mood above the bar: {sum(not t['moods'] for t in tagged.values())}, no style: {sum(not t['styles'] for t in tagged.values())}")
     print()
 
 

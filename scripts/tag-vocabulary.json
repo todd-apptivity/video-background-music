@@ -1,123 +1,390 @@
 {
-  "_comment": "The tag vocabulary for scripts/tag-tracks.py. Edit freely: a tag is scored by CLAP against its prompts and, where `essentia` lists matching model classes, by those classes too. Prompts describe how the music sounds, not what a video is about. A class name ending in * matches every class with that prefix. Re-run tag-tracks.py after editing; the audio analysis is cached, so only the cheap scoring step repeats.",
+  "_comment": "The tag vocabulary for scripts/tag-tracks.py. Edit freely: a tag is scored by CLAP against its prompts and, where `essentia` lists matching model classes, by those classes too. Prompts describe how the music sounds, not what a video is about. A class name ending in * matches every class with that prefix (the strongest of them counts). A tag with Essentia classes is only applied when both models rate the track above the catalog average, so a bad mapping makes a tag rarer, never noisier. Re-run tag-tracks.py after editing; the audio analysis is cached, so only the cheap scoring step repeats.",
   "version": 1,
   "mood": {
     "calm": {
-      "prompts": ["calm, peaceful, relaxing music", "gentle, soothing background music"],
-      "essentia": { "moodtheme": ["calm", "relaxing", "meditative"], "binary": ["relaxed"] }
+      "prompts": [
+        "calm, peaceful, relaxing music",
+        "gentle, soothing background music"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "calm",
+          "relaxing",
+          "meditative"
+        ],
+        "binary": [
+          "relaxed"
+        ]
+      }
     },
     "uplifting": {
-      "prompts": ["uplifting, inspiring, hopeful music", "positive, motivational music"],
-      "essentia": { "moodtheme": ["uplifting", "inspiring", "hopeful", "motivational", "positive"] }
+      "prompts": [
+        "uplifting, inspiring, hopeful music",
+        "positive, motivational music"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "uplifting",
+          "inspiring",
+          "hopeful",
+          "motivational",
+          "positive"
+        ]
+      }
     },
     "happy": {
-      "prompts": ["happy, cheerful, bright music", "joyful, sunny music"],
-      "essentia": { "moodtheme": ["happy"], "binary": ["happy"] }
+      "prompts": [
+        "happy, cheerful, bright music",
+        "joyful, sunny music"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "happy"
+        ],
+        "binary": [
+          "happy"
+        ]
+      }
     },
     "playful": {
-      "prompts": ["playful, quirky, whimsical music", "bouncy, silly cartoon music"],
-      "essentia": { "moodtheme": ["fun", "funny", "children"] }
+      "prompts": [
+        "playful, quirky, whimsical music",
+        "bouncy, silly cartoon music"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "fun",
+          "funny",
+          "children"
+        ]
+      }
     },
     "energetic": {
-      "prompts": ["energetic, driving, exciting music", "fast, high energy action music"],
-      "essentia": { "moodtheme": ["energetic", "fast", "action", "sport"], "binary": ["party"] }
+      "prompts": [
+        "energetic, driving, exciting music",
+        "fast, high energy action music"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "energetic",
+          "fast",
+          "action",
+          "sport"
+        ],
+        "binary": [
+          "party"
+        ]
+      }
     },
     "groovy": {
-      "prompts": ["cool, groovy, laid-back music", "smooth music with a relaxed groove"],
-      "essentia": { "moodtheme": ["groovy", "cool"] }
+      "prompts": [
+        "cool, groovy, laid-back music",
+        "smooth music with a relaxed groove"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "groovy",
+          "cool"
+        ]
+      }
     },
     "tense": {
-      "prompts": ["tense, suspenseful music", "anxious, urgent music building suspense"],
-      "essentia": { "moodtheme": ["dramatic"] }
+      "prompts": [
+        "tense, suspenseful music",
+        "anxious, urgent music building suspense"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "dramatic"
+        ]
+      }
     },
     "dark": {
-      "prompts": ["dark, ominous, brooding music", "sinister, menacing music"],
-      "essentia": { "moodtheme": ["dark", "heavy"], "binary": ["aggressive"] }
+      "prompts": [
+        "dark, ominous, brooding music",
+        "sinister, menacing music with low drones"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "dark"
+        ]
+      }
     },
     "melancholic": {
-      "prompts": ["sad, melancholic, wistful music", "sorrowful, emotional music"],
-      "essentia": { "moodtheme": ["sad", "melancholic", "emotional"], "binary": ["sad"] }
+      "prompts": [
+        "sad, melancholic, wistful music",
+        "sorrowful, emotional music"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "sad",
+          "melancholic",
+          "emotional"
+        ],
+        "binary": [
+          "sad"
+        ]
+      }
     },
     "mysterious": {
-      "prompts": ["mysterious, curious, enigmatic music", "eerie, puzzling music"]
+      "prompts": [
+        "mysterious, curious, enigmatic music",
+        "eerie, puzzling music"
+      ]
     },
     "epic": {
-      "prompts": ["epic, heroic, triumphant music", "grand, powerful adventure music"],
-      "essentia": { "moodtheme": ["epic", "powerful", "adventure", "trailer"] }
+      "prompts": [
+        "epic, heroic, triumphant music",
+        "grand, powerful adventure music"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "epic",
+          "powerful",
+          "adventure",
+          "trailer"
+        ]
+      }
     },
     "romantic": {
-      "prompts": ["romantic, tender, warm music", "loving, heartfelt music"],
-      "essentia": { "moodtheme": ["romantic", "love", "ballad"] }
+      "prompts": [
+        "romantic, tender, warm music",
+        "loving, heartfelt music"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "romantic",
+          "love",
+          "ballad"
+        ]
+      }
     },
     "dreamy": {
-      "prompts": ["dreamy, ethereal, floating music", "hazy, wistful, dreamlike music"],
-      "essentia": { "moodtheme": ["dream", "space", "soft"] }
+      "prompts": [
+        "dreamy, ethereal, floating music",
+        "hazy, wistful, dreamlike music"
+      ],
+      "essentia": {
+        "moodtheme": [
+          "dream",
+          "space",
+          "soft"
+        ]
+      }
     }
   },
   "style": {
     "chiptune": {
-      "prompts": ["chiptune, 8-bit retro video game music", "square wave chip music from an old game console"],
-      "essentia": { "genre": ["Electronic---Chiptune"] }
+      "prompts": [
+        "chiptune, 8-bit retro video game music",
+        "square wave chip music from an old game console"
+      ],
+      "essentia": {
+        "genre": [
+          "Electronic---Chiptune"
+        ]
+      }
     },
     "orchestral": {
-      "prompts": ["orchestral music with strings, brass and woodwinds", "a symphony orchestra playing"],
-      "essentia": { "instrument": ["orchestra", "strings", "violin", "cello", "brass", "horn"] }
+      "prompts": [
+        "orchestral music with strings, brass and woodwinds",
+        "a symphony orchestra playing"
+      ],
+      "essentia": {
+        "instrument": [
+          "orchestra",
+          "strings",
+          "violin",
+          "cello",
+          "brass",
+          "horn"
+        ]
+      }
     },
     "cinematic": {
-      "prompts": ["cinematic film score", "dramatic movie soundtrack music"],
-      "essentia": { "genre": ["Stage & Screen---Score", "Stage & Screen---Soundtrack"], "moodtheme": ["film", "movie", "trailer"] }
+      "prompts": [
+        "cinematic film score",
+        "dramatic movie soundtrack music"
+      ],
+      "essentia": {
+        "genre": [
+          "Stage & Screen---Score",
+          "Stage & Screen---Soundtrack"
+        ],
+        "moodtheme": [
+          "film",
+          "movie",
+          "trailer"
+        ]
+      }
     },
     "piano": {
-      "prompts": ["solo piano music", "music led by a piano melody"],
-      "essentia": { "instrument": ["piano"] }
+      "prompts": [
+        "solo piano music",
+        "music led by a piano melody"
+      ],
+      "essentia": {
+        "instrument": [
+          "piano"
+        ]
+      }
     },
     "acoustic": {
-      "prompts": ["acoustic guitar music", "fingerpicked acoustic guitar"],
-      "essentia": { "instrument": ["acousticguitar", "classicalguitar"] }
+      "prompts": [
+        "acoustic guitar music",
+        "fingerpicked acoustic guitar"
+      ],
+      "essentia": {
+        "instrument": [
+          "acousticguitar",
+          "classicalguitar"
+        ]
+      }
     },
     "folk": {
-      "prompts": ["folk music with fiddle, flute and acoustic instruments", "celtic folk tune"],
-      "essentia": { "genre": ["Folk, World, & Country---*"] }
+      "prompts": [
+        "folk music with fiddle, flute and acoustic instruments",
+        "celtic folk tune"
+      ],
+      "essentia": {
+        "genre": [
+          "Folk, World, & Country---*"
+        ]
+      }
     },
     "medieval": {
-      "prompts": ["medieval fantasy tavern music with lute and flute", "renaissance fair music"],
-      "essentia": { "genre": ["Classical---Medieval", "Folk, World, & Country---Celtic"] }
+      "prompts": [
+        "medieval fantasy tavern music with lute and flute",
+        "renaissance fair music"
+      ],
+      "essentia": {
+        "genre": [
+          "Classical---Medieval",
+          "Folk, World, & Country---Celtic"
+        ]
+      }
     },
     "ambient": {
-      "prompts": ["ambient atmospheric music with soft pads", "slow evolving ambient soundscape"],
-      "essentia": { "genre": ["Electronic---Ambient", "Electronic---Dark Ambient", "Electronic---New Age"], "instrument": ["pad"] }
+      "prompts": [
+        "ambient atmospheric music with soft pads",
+        "slow evolving ambient soundscape"
+      ],
+      "essentia": {
+        "genre": [
+          "Electronic---Ambient",
+          "Electronic---Dark Ambient",
+          "Electronic---New Age"
+        ],
+        "instrument": [
+          "pad"
+        ]
+      }
     },
     "electronic": {
-      "prompts": ["electronic music with synthesizers and a drum machine", "modern electronic dance beat"],
-      "essentia": { "instrument": ["synthesizer", "drummachine", "computer"] }
+      "prompts": [
+        "electronic music with synthesizers and a drum machine",
+        "modern electronic dance beat"
+      ],
+      "essentia": {
+        "instrument": [
+          "synthesizer",
+          "drummachine",
+          "computer"
+        ]
+      }
     },
     "synthwave": {
-      "prompts": ["synthwave, retro 1980s synth music", "neon retro synth-pop"],
-      "essentia": { "genre": ["Electronic---Synthwave", "Electronic---Synth-pop"] }
+      "prompts": [
+        "synthwave, retro 1980s synth music",
+        "neon retro synth-pop"
+      ],
+      "essentia": {
+        "genre": [
+          "Electronic---Synthwave",
+          "Electronic---Synth-pop"
+        ]
+      }
     },
     "lofi": {
-      "prompts": ["lo-fi hip hop beat", "chill lofi beat with dusty drums"],
-      "essentia": { "genre": ["Hip Hop---Instrumental", "Electronic---Downtempo", "Hip Hop---Trip Hop", "Electronic---Chillwave"] }
+      "prompts": [
+        "lo-fi hip hop beat",
+        "chill lofi beat with dusty drums"
+      ],
+      "essentia": {
+        "genre": [
+          "Hip Hop---Instrumental",
+          "Electronic---Downtempo",
+          "Hip Hop---Trip Hop",
+          "Electronic---Chillwave"
+        ]
+      }
     },
     "jazz": {
-      "prompts": ["jazz with saxophone, piano and double bass", "swinging jazz band"],
-      "essentia": { "genre": ["Jazz---*"] }
+      "prompts": [
+        "jazz with saxophone, piano and double bass",
+        "swinging jazz band"
+      ],
+      "essentia": {
+        "genre": [
+          "Jazz---*"
+        ]
+      }
     },
     "lounge": {
-      "prompts": ["lounge music, bossa nova, easy listening", "relaxed cocktail lounge music"],
-      "essentia": { "genre": ["Rock---Lounge", "Jazz---Bossa Nova", "Latin---Bossanova", "Jazz---Easy Listening"] }
+      "prompts": [
+        "smooth lounge music with jazzy chords and a bossa nova groove",
+        "retro cocktail lounge music with brushed drums"
+      ],
+      "essentia": {
+        "genre": [
+          "Rock---Lounge",
+          "Jazz---Bossa Nova",
+          "Latin---Bossanova",
+          "Jazz---Easy Listening"
+        ]
+      }
     },
     "rock": {
-      "prompts": ["rock music with electric guitars and drums", "energetic guitar rock band"],
-      "essentia": { "genre": ["Rock---*"], "instrument": ["electricguitar"] }
+      "prompts": [
+        "rock music with electric guitars and drums",
+        "energetic guitar rock band"
+      ],
+      "essentia": {
+        "genre": [
+          "Rock---*"
+        ],
+        "instrument": [
+          "electricguitar"
+        ]
+      }
     },
     "funk": {
-      "prompts": ["funky groove with slap bass and drums", "funk and soul music"],
-      "essentia": { "genre": ["Funk / Soul---*"] }
+      "prompts": [
+        "funky groove with slap bass and drums",
+        "funk and soul music"
+      ],
+      "essentia": {
+        "genre": [
+          "Funk / Soul---*"
+        ]
+      }
     },
-    "pop": {
-      "prompts": ["upbeat modern pop music", "catchy pop instrumental"],
-      "essentia": { "genre": ["Pop---*"] }
+    "dance": {
+      "prompts": [
+        "upbeat electronic dance music with a four-on-the-floor beat",
+        "house music groove"
+      ],
+      "essentia": {
+        "genre": [
+          "Electronic---House",
+          "Electronic---Deep House",
+          "Electronic---Trance"
+        ],
+        "binary": [
+          "danceability"
+        ]
+      }
     }
   }
 }

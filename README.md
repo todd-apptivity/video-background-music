@@ -86,8 +86,9 @@ Each track carries fields measured from its audio by `scripts/tag-tracks.py`:
 | `tempo` | `medium` | `slow` under 90 BPM, `medium` under 125, `fast` above |
 | `key` | `A minor` | key detection |
 | `energy` | `high` | loudness plus note density, in thirds of this catalog |
-| `mood` | `calm` | the single best mood from the vocabulary |
-| `tags` | `["calm", "ambient", "piano"]` | up to 2 moods and 3 styles from `scripts/tag-vocabulary.json` |
+| `mood` | `calm` | the single best mood, always set |
+| `moods` | `["calm", "dreamy"]` | up to 2 moods that clearly fit; can be empty |
+| `styles` | `["ambient", "piano"]` | up to 3 styles that clearly fit; can be empty |
 | `genres` | `["Electronic---Chiptune"]` | Discogs styles, verbatim from Essentia's genre model |
 
 Mood and style are scored by two models (CLAP and Essentia's classifiers) and
