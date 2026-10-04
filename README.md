@@ -11,6 +11,7 @@ manifest.json          # the catalog — the only thing git knows about the audi
 LICENSE                # MIT, and it covers THIS REPO'S CODE ONLY
 LICENSES/              # CC0 deed pointer, and per-source provenance
 scripts/sync-upstream  # run by hand; never scheduled
+scripts/tag-tracks.py  # tempo, key, mood and style tags; also by hand
 (release assets)       # v1/ambient-drift.mp3, … the actual tracks
 ```
 
@@ -73,3 +74,39 @@ mirror contains, and the whole point of a mirror is that it does not change
 under its consumers.
 
 Needs `ffmpeg` on PATH, for transcode and loudness normalisation.
+
+## Tags
+
+Each track carries fields measured from its audio by `scripts/tag-tracks.py`:
+
+| field | example | how |
+| --- | --- | --- |
+| `bpm` | `120` | three tempo estimators; see `bpmConfident` |
+| `bpmConfident` | `true` | two of the three agreed. When `false`, `bpm` may be half, double or 2/3 of the real tempo, so check by ear |
+| `tempo` | `medium` | `slow` under 90 BPM, `medium` under 125, `fast` above |
+| `key` | `A minor` | key detection |
+| `energy` | `high` | loudness plus note density, in thirds of this catalog |
+| `mood` | `calm` | the single best mood from the vocabulary |
+| `tags` | `["calm", "ambient", "piano"]` | up to 2 moods and 3 styles from `scripts/tag-vocabulary.json` |
+| `genres` | `["Electronic---Chiptune"]` | Discogs styles, verbatim from Essentia's genre model |
+
+Mood and style are scored by two models (CLAP and Essentia's classifiers) and
+are **relative to this catalog**: `calm` means calmer than most tracks here,
+not calm in some absolute sense. The vocabulary is a plain JSON file of tags
+and the phrases that describe them; edit it and re-run.
+
+```bash
+pip install -r scripts/requirements-tagging.txt
+python scripts/tag-tracks.py --audio ~/vbm-audio          # dry: prints every track's tags
+python scripts/tag-tracks.py --audio ~/vbm-audio --write  # updates manifest.json
+```
+
+Missing audio is downloaded from the release and checked against its
+`sha256`; missing models go into `build/models` (about 2.4 GB, mostly the CLAP
+checkpoint). Measurements are cached by `sha256` in `build/analysis`, so
+re-running after a vocabulary edit takes seconds. `sync-upstream` carries the
+fields forward for any track whose bytes did not change.
+
+The Essentia models are CC BY-NC-SA 4.0 (non-commercial, with attribution).
+See `LICENSES/PROVENANCE.md` for every model, its licence, and why its use here
+fits that licence.

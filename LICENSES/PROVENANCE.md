@@ -38,11 +38,20 @@ Credit is given in `README.md` as a courtesy, not as a licence term.
 - Licence: CC0 1.0, stated on the itch.io page
 - Retrieved: _(fill in on first sync)_
 - Taken: _(fill in — which folders, how many tracks)_
-- Changed: transcoded to 192 kbps mp3, loudness-normalised, filenames slugified
+- Changed: nothing in the audio. Files are copied byte-identical and only the
+  filenames are slugified; loudness is measured, not applied (see the header of
+  `scripts/sync-upstream.mjs`)
 - Notes: itch.io has no stable direct download URL, which is the main reason
   this mirror exists. The author asks that assets not be resold unmodified and
-  not be used for NFT or AI/ML projects; a free mirror for use as a video music
-  bed is neither.
+  says they do not endorse use in projects relating to NFTs or AI/ML; a free
+  mirror for use as a video music bed is neither.
+- Tagging: the tempo, mood and style fields in `manifest.json` were produced by
+  running pretrained models over these files locally (see "Analysis models"
+  below). No track was used to train or fine-tune anything, and no audio was
+  sent to a third-party service. The owner of this repository read that as
+  outside the author's AI/ML request, since the project is a music library
+  and the models only label it; anyone who reads the request more strictly
+  can drop the tag fields and keep the audio.
 
 ### FreePD
 
@@ -50,7 +59,9 @@ Credit is given in `README.md` as a courtesy, not as a licence term.
 - Licence: CC0 1.0 (repository `LICENSE` is CC0-1.0)
 - Retrieved: _(fill in on first sync)_
 - Taken: _(fill in — which genre folders)_
-- Changed: transcoded to 192 kbps mp3, loudness-normalised, filenames slugified
+- Changed: nothing in the audio. Files are copied byte-identical and only the
+  filenames are slugified; loudness is measured, not applied (see the header of
+  `scripts/sync-upstream.mjs`)
 - Notes: ~6 GB repository. Sparse-checkout the folders in use; do not clone it
   whole.
 
@@ -62,4 +73,35 @@ Credit is given in `README.md` as a courtesy, not as a licence term.
   silently impose share-alike on every consumer.
 - Retrieved: _(fill in on first sync)_
 - Taken: _(fill in)_
-- Changed: transcoded to 192 kbps mp3, loudness-normalised, filenames slugified
+- Changed: nothing in the audio. Files are copied byte-identical and only the
+  filenames are slugified; loudness is measured, not applied (see the header of
+  `scripts/sync-upstream.mjs`)
+
+## Analysis models
+
+`scripts/tag-tracks.py` writes `bpm`, `bpmConfident`, `tempo`, `key`,
+`energy`, `mood`, `tags` and `genres` into `manifest.json`. These are
+measurements of the audio, not part of it. They come from:
+
+- **LAION-CLAP**, checkpoint `music_audioset_epoch_15_esc_90.14.pt`
+  (<https://huggingface.co/lukewys/laion_clap>). CC0 1.0. Scores the `mood`
+  and style `tags` against `scripts/tag-vocabulary.json`.
+- **Essentia models** by the Music Technology Group, Universitat Pompeu Fabra
+  (<https://essentia.upf.edu/models.html>): Discogs-EffNet with its
+  genre_discogs400, mtg_jamendo_moodtheme, mtg_jamendo_instrument, mood and
+  danceability heads, and TempoCNN (deeptemp-k16). **CC BY-NC-SA 4.0**, which
+  is free for non-commercial use with attribution; a commercial licence is
+  available from MTG on request. They give a second opinion on `mood` and
+  `tags`, one of three tempo estimates behind `bpm`, and all of `genres`
+  (Discogs style names, verbatim).
+- **Essentia** (AGPL-3.0) and **librosa** (ISC), as libraries: beat tracking,
+  key detection and onset counting. Signal processing, no trained model.
+
+Using the Essentia models here rests on this being a free, public catalog that
+charges nobody: under the licence, "NonCommercial means not primarily intended
+for or directed towards commercial advantage or monetary compensation." If the
+tagging ever becomes part of paid work, get MTG's commercial licence or remove
+the Essentia votes. The fields they produce are treated as facts about the
+audio, not as an adaptation of the models, so the manifest stays under this
+repository's MIT licence. That is this project's reading of the licence, not
+settled law.

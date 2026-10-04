@@ -1,0 +1,11 @@
+# For scripts/tag-tracks.py only. Python 3.11; these are the versions it was run with.
+# On Linux, install CPU-only torch first to skip ~2 GB of CUDA wheels:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# essentia-tensorflow and plain essentia install the same module. Have only the
+# first; if both are present, uninstall essentia and reinstall essentia-tensorflow.
+essentia-tensorflow==2.1b6.dev1389
+laion-clap==1.1.7
+librosa==0.11.0
+numpy==1.26.4
+torch==2.14.1

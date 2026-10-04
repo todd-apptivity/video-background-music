@@ -260,6 +260,23 @@ async function describe(input, source, outDir, { measureLoudness }) {
   };
 }
 
+/** The fields scripts/tag-tracks.py owns. Keep in step with OWNED_FIELDS there. */
+const TAG_FIELDS = ["bpm", "bpmConfident", "tempo", "key", "energy", "mood", "tags", "genres"];
+
+/** `track` with `old`'s tag fields placed after `source`, the order tag-tracks.py writes. */
+function withTagFields(track, old) {
+  const out = {};
+  for (const [key, value] of Object.entries(track)) {
+    if (TAG_FIELDS.includes(key)) continue;
+    out[key] = value;
+    if (key === "source") {
+      for (const field of TAG_FIELDS) if (field in old) out[field] = old[field];
+    }
+  }
+  if (!("mood" in out)) out.mood = track.mood;
+  return out;
+}
+
 function diff(before, after) {
   const was = new Map(before.map((t) => [t.id, t]));
   const now = new Map(after.map((t) => [t.id, t]));
@@ -340,6 +357,16 @@ async function main() {
   // chose that, and rediscovering it upstream is not a reason to un-choose it.
   const wasSeeded = new Set(before.filter((t) => t.seeded).map((t) => t.id));
   for (const track of after) track.seeded = wasSeeded.has(track.id);
+
+  // Tags are measured from the audio by scripts/tag-tracks.py, which takes a
+  // model run this script does not do. Same bytes, same measurements: carry
+  // them forward. Changed bytes drop them, so a re-encode is re-measured
+  // rather than wearing the old file's tags.
+  const previous = new Map(before.map((t) => [t.id, t]));
+  after = after.map((track) => {
+    const old = previous.get(track.id);
+    return old && old.sha256 === track.sha256 ? withTagFields(track, old) : track;
+  });
 
   const tag = opts.tag ?? manifest.releaseTag;
   fs.writeFileSync(MANIFEST, `${JSON.stringify({ ...manifest, releaseTag: tag, tracks: after }, null, 2)}\n`);
