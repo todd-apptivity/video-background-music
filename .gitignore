@@ -7,3 +7,5 @@ node_modules/
 
 # Audition shortlist staged by the seed-selection step. Derived from build/.
 /candidates/
+
+__pycache__/
