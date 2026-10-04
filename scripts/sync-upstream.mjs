@@ -52,6 +52,7 @@ const run = promisify(execFile);
 
 const REPO = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const MANIFEST = path.join(REPO, "manifest.json");
+const EDITS = path.join(REPO, "manifest-edits.json");
 
 /**
  * Formats published as-is. Everything here is playable by the `<audio>` element
@@ -368,8 +369,26 @@ async function main() {
     return old && old.sha256 === track.sha256 ? withTagFields(track, old) : track;
   });
 
+  // A person's corrections, made in scripts/catalog-editor.py, win over both
+  // upstream and the tagger. A corrected title keeps the fresh upstream title
+  // as its `was`, so reverting it in the editor gives today's upstream name.
+  const edits = fs.existsSync(EDITS) ? JSON.parse(fs.readFileSync(EDITS, "utf8")) : { tracks: {} };
+  let editsChanged = false;
+  for (const track of after) {
+    const record = edits.tracks[track.id];
+    if (!record?.set) continue;
+    for (const [field, value] of Object.entries(record.set)) {
+      if (field === "title" && record.was?.title !== track.title) {
+        record.was = { ...record.was, title: track.title };
+        editsChanged = true;
+      }
+      track[field] = value;
+    }
+  }
+
   const tag = opts.tag ?? manifest.releaseTag;
   fs.writeFileSync(MANIFEST, `${JSON.stringify({ ...manifest, releaseTag: tag, tracks: after }, null, 2)}\n`);
+  if (editsChanged) fs.writeFileSync(EDITS, `${JSON.stringify(edits, null, 2)}\n`);
   console.log(`  ✓ manifest.json updated — releaseTag ${tag}, ${after.length} track(s)\n`);
   console.log("  Now publish the audio as release assets:\n");
   console.log(`    gh release create ${tag} --title ${tag} --notes "music sync" ${opts.out}/*\n`);

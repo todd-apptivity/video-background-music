@@ -63,6 +63,7 @@ import numpy as np
 REPO = Path(__file__).resolve().parent.parent
 MANIFEST = REPO / "manifest.json"
 VOCABULARY = REPO / "scripts" / "tag-vocabulary.json"
+EDITS = REPO / "manifest-edits.json"
 BUILD = REPO / "build"
 
 # Bump when the analysis stage changes, so stale cache entries are re-measured.
@@ -431,6 +432,29 @@ def report(tracks, tagged):
     print()
 
 
+def apply_edits(tracks, tagged, edits):
+    """Lay a person's corrections (manifest-edits.json, from catalog-editor.py) over the tagger's output.
+
+    A person wins over the tagger, always. Each edited field's `was` is
+    refreshed to what the tagger says now, so "Revert" in the editor brings
+    back the current tagger's answer and a tuning pass compares against it.
+    Returns how many tracks carried edits.
+    """
+    count = 0
+    for track in tracks:
+        record = edits["tracks"].get(track["id"])
+        if not record or not record.get("set"):
+            continue
+        count += 1
+        for field, value in record["set"].items():
+            if field in OWNED_FIELDS:
+                record.setdefault("was", {})[field] = tagged[track["id"]][field]
+                tagged[track["id"]][field] = value
+            else:
+                track[field] = value  # e.g. a title; this script never writes those
+    return count
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--audio", type=Path, default=BUILD / "audio", help="directory of the release's audio files (missing ones are downloaded)")
@@ -452,9 +476,13 @@ def main():
     if not args.write:
         print("  Dry run. Re-run with --write to update manifest.json.\n")
         return
+    edits = json.loads(EDITS.read_text()) if EDITS.exists() else {"tracks": {}}
+    kept = apply_edits(tracks, tagged, edits)
     manifest["tracks"] = [with_fields(t, tagged[t["id"]]) for t in tracks]
     MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
-    print(f"  ✓ manifest.json updated, {len(tracks)} track(s) tagged\n")
+    if kept:
+        EDITS.write_text(json.dumps(edits, indent=2, ensure_ascii=False) + "\n")
+    print(f"  ✓ manifest.json updated, {len(tracks)} track(s) tagged, hand edits kept on {kept}\n")
 
 
 if __name__ == "__main__":

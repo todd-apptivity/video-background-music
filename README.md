@@ -12,6 +12,8 @@ LICENSE                # MIT, and it covers THIS REPO'S CODE ONLY
 LICENSES/              # CC0 deed pointer, and per-source provenance
 scripts/sync-upstream  # run by hand; never scheduled
 scripts/tag-tracks.py  # tempo, key, mood and style tags; also by hand
+scripts/catalog-editor # listen to tracks and fix their metadata in a browser
+manifest-edits.json    # what a person changed in the editor; always wins
 (release assets)       # v1/ambient-drift.mp3, … the actual tracks
 ```
 
@@ -111,3 +113,30 @@ fields forward for any track whose bytes did not change.
 The Essentia models are CC BY-NC-SA 4.0 (non-commercial, with attribution).
 See `LICENSES/PROVENANCE.md` for every model, its licence, and why its use here
 fits that licence.
+
+## Editing the catalog
+
+```bash
+python3 scripts/catalog-editor.py                      # opens http://127.0.0.1:8765
+python3 scripts/catalog-editor.py --audio ~/vbm-audio  # play local copies instead of streaming
+```
+
+A browser page for listening to each track and fixing its metadata: title,
+BPM, key, energy, main mood, moods and styles. BPM has tap tempo and ½×, 2×,
+⅔× and 1.5× buttons, because that is how beat trackers are usually wrong.
+Filters narrow the list to, say, unreviewed tracks with an unconfirmed BPM,
+and `R` marks a track reviewed and moves to the next one. Standard library
+Python only; nothing to install. Use Chrome, Edge or Firefox: the tracks are
+Ogg Vorbis, which not every Safari version plays.
+
+Every change is saved as you make it, in two places:
+
+- `manifest.json`, so the catalog is correct straight away and the change
+  reads as a normal diff.
+- `manifest-edits.json`, the record of what a person decided, with each
+  field's value before the first edit. `tag-tracks.py` and `sync-upstream`
+  re-apply it after they run, so a re-tag or a re-sync never undoes a
+  correction. "Revert" in the editor puts the tagger's value back. Review
+  status and notes live only here and never reach consumers.
+
+Commit both files when you're done.

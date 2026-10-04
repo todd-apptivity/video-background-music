@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalog Editor</title>
+<style>
+/* Layout: a filterable track list beside the selected track's editor, over a fixed transport bar. */
+:root {
+  --bg: #eef1f3;
+  --panel: #ffffff;
+  --sunk: #f6f8f9;
+  --ink: #15202b;
+  --muted: #5a6773;
+  --line: #d6dde3;
+  --accent: #b86400;
+  --accent-ink: #ffffff;
+  --accent-weak: #fbe9d2;
+  --ok: #24744a;
+  --ok-weak: #dcf0e4;
+  --bad: #b3261e;
+  --meter-off: #d6dde3;
+  --font-ui: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-data: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --radius: 6px;
+  --transport-h: 64px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f141a;
+    --panel: #161d25;
+    --sunk: #121920;
+    --ink: #e3e9ee;
+    --muted: #93a1ad;
+    --line: #29343f;
+    --accent: #f0a23a;
+    --accent-ink: #1a1206;
+    --accent-weak: #3a2a13;
+    --ok: #5cbf86;
+    --ok-weak: #173325;
+    --bad: #f2867d;
+    --meter-off: #2c3843;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 14px/1.45 var(--font-ui);
+  display: grid; grid-template-rows: auto 1fr auto;
+}
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.data { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+.label { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+
+/* Header ---------------------------------------------------------------- */
+header {
+  background: var(--panel); border-bottom: 1px solid var(--line);
+  padding: 12px 16px; display: grid; gap: 10px;
+}
+.head-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+h1 { font-size: 17px; margin: 0; letter-spacing: -.01em; }
+.progress { display: flex; align-items: center; gap: 10px; min-width: 220px; flex: 1; max-width: 420px; }
+.progress-bar { flex: 1; height: 6px; background: var(--meter-off); border-radius: 3px; overflow: hidden; }
+.progress-bar > div { height: 100%; background: var(--ok); width: 0; transition: width .2s; }
+.progress-text { color: var(--muted); white-space: nowrap; }
+.save-state { margin-left: auto; color: var(--muted); font-size: 13px; }
+.save-state.error { color: var(--bad); font-weight: 600; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.filters input[type=search] { flex: 1 1 200px; min-width: 0; }
+.filters select, .filters input[type=search] {
+  background: var(--sunk); border: 1px solid var(--line); border-radius: var(--radius); padding: 6px 8px; max-width: 100%;
+}
+.toggle { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); white-space: nowrap; }
+.count { color: var(--muted); margin-left: auto; white-space: nowrap; }
+
+/* Main ------------------------------------------------------------------ */
+main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(340px, 440px); min-height: 0; }
+#list { overflow-y: auto; padding-bottom: 12px; min-height: 0; }
+.row {
+  display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; gap: 10px; align-items: center;
+  padding: 8px 16px; border-bottom: 1px solid var(--line); cursor: pointer; background: var(--bg);
+}
+.row:hover { background: var(--sunk); }
+.row.selected { background: var(--panel); box-shadow: inset 3px 0 0 var(--accent); }
+.play {
+  width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel);
+  display: grid; place-items: center; padding: 0;
+}
+.play svg { width: 12px; height: 12px; fill: var(--ink); }
+.play.on { background: var(--accent); border-color: var(--accent); }
+.play.on svg { fill: var(--accent-ink); }
+.row-main { min-width: 0; display: grid; gap: 3px; }
+.row-title { display: flex; gap: 8px; align-items: baseline; min-width: 0; }
+.row-title strong { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row-sub { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip {
+  font-size: 12px; padding: 1px 7px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+}
+.chip.primary { background: var(--accent-weak); border-color: transparent; font-weight: 600; }
+.chip.style { color: var(--muted); }
+.row-data { display: flex; gap: 14px; align-items: center; color: var(--muted); font-size: 12px; }
+.row-data .bpm { color: var(--ink); min-width: 46px; text-align: right; }
+.unsure { color: var(--accent); font-weight: 700; }
+.marks { display: flex; gap: 4px; min-width: 34px; justify-content: flex-end; }
+.mark { font-size: 11px; font-weight: 700; padding: 0 5px; border-radius: 3px; }
+.mark.done { color: var(--ok); background: var(--ok-weak); }
+.mark.edited { color: var(--accent); background: var(--accent-weak); }
+
+.meter { display: inline-flex; gap: 2px; align-items: flex-end; height: 12px; }
+.meter i { width: 4px; background: var(--meter-off); border-radius: 1px; }
+.meter i:nth-child(1) { height: 5px; } .meter i:nth-child(2) { height: 8px; } .meter i:nth-child(3) { height: 12px; }
+.meter[data-level="low"] i:nth-child(-n+1), .meter[data-level="medium"] i:nth-child(-n+2), .meter[data-level="high"] i { background: var(--accent); }
+
+.empty { padding: 32px 16px; color: var(--muted); }
+
+/* Editor ---------------------------------------------------------------- */
+#editor {
+  background: var(--panel); border-left: 1px solid var(--line); overflow-y: auto; min-height: 0;
+  padding: 16px; padding-bottom: 24px; display: grid; gap: 18px; align-content: start;
+}
+.editor-head { display: grid; gap: 6px; }
+.close-editor { display: none; }
+.field { display: grid; gap: 6px; }
+.field-head { display: flex; align-items: baseline; gap: 8px; }
+.was { font-size: 12px; color: var(--muted); }
+.was button { border: 0; background: none; color: var(--accent); padding: 0; text-decoration: underline; font-size: 12px; }
+.edited-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); display: inline-block; }
+input[type=text], input[type=number], textarea, #editor select {
+  background: var(--sunk); border: 1px solid var(--line); border-radius: var(--radius); padding: 7px 9px; width: 100%;
+}
+#f-title { font-size: 16px; font-weight: 600; }
+textarea { min-height: 70px; resize: vertical; }
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; font-size: 12px; color: var(--muted); }
+.facts dd { margin: 0; color: var(--ink); min-width: 0; overflow-wrap: anywhere; }
+.facts dt { white-space: nowrap; }
+.bpm-row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.bpm-row input { width: 90px; }
+.btn {
+  border: 1px solid var(--line); background: var(--sunk); border-radius: var(--radius); padding: 6px 10px; white-space: nowrap;
+}
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.tap-readout { color: var(--muted); font-size: 12px; }
+.segmented { justify-self: start; display: inline-flex; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.segmented button { border: 0; background: var(--sunk); padding: 6px 14px; }
+.segmented button + button { border-left: 1px solid var(--line); }
+.segmented button[aria-pressed=true] { background: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.pickers { display: flex; flex-wrap: wrap; gap: 6px; }
+.pick {
+  border: 1px solid var(--line); background: var(--sunk); border-radius: 14px; padding: 3px 10px; font-size: 13px;
+}
+.pick[aria-pressed=true] { background: var(--accent-weak); border-color: var(--accent); font-weight: 600; }
+.review-bar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; border-top: 1px solid var(--line); padding-top: 14px; }
+.hint { color: var(--muted); font-size: 12px; }
+kbd { font-family: var(--font-data); font-size: 11px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 3px; padding: 0 4px; background: var(--sunk); }
+.notice { padding: 24px 16px; max-width: 60ch; }
+.notice code { font-family: var(--font-data); background: var(--sunk); padding: 1px 4px; border-radius: 3px; }
+
+/* Transport --------------------------------------------------------------- */
+#transport {
+  background: var(--panel); border-top: 1px solid var(--line); min-height: var(--transport-h);
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 8px 16px;
+}
+.transport-buttons { display: flex; gap: 6px; }
+.transport-buttons button { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: var(--sunk); display: grid; place-items: center; padding: 0; }
+.transport-buttons svg { width: 14px; height: 14px; fill: var(--ink); }
+#t-play { background: var(--accent); border-color: var(--accent); }
+#t-play svg { fill: var(--accent-ink); }
+.now { min-width: 0; display: grid; gap: 4px; }
+.now-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; }
+.scrub { display: flex; align-items: center; gap: 10px; }
+.scrub input { flex: 1; accent-color: var(--accent); min-width: 0; }
+.time { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.audio-error { color: var(--bad); font-size: 12px; }
+
+@media (max-width: 860px) {
+  main { grid-template-columns: minmax(0, 1fr); }
+  #editor {
+    position: fixed; inset: 0 0 var(--transport-h) 0; z-index: 5; border-left: 0;
+  }
+  .close-editor { display: inline-block; justify-self: start; }
+  .row { grid-template-columns: 36px minmax(0, 1fr); }
+  .row-data { grid-column: 2; flex-wrap: wrap; gap: 10px; }
+  .row-data .bpm { text-align: left; min-width: 0; }
+  #transport { height: var(--transport-h); gap: 10px; }
+  #transport .time, .row-sub { display: none; }
+  .transport-buttons { gap: 4px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="head-row">
+    <h1>Catalog Editor</h1>
+    <div class="progress" title="Tracks marked reviewed">
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+      <span class="progress-text data" id="progress-text">0 / 0 reviewed</span>
+    </div>
+    <span class="save-state" id="save-state" role="status" aria-live="polite"></span>
+  </div>
+  <div class="filters" role="search">
+    <input type="search" id="q" placeholder="Search titles and ids" aria-label="Search titles and ids">
+    <select id="f-status" aria-label="Review status">
+      <option value="">Any status</option>
+      <option value="todo">Not reviewed</option>
+      <option value="done">Reviewed</option>
+      <option value="edited">Edited by hand</option>
+    </select>
+    <select id="f-collection" aria-label="Collection"><option value="">Every collection</option></select>
+    <select id="f-mood" aria-label="Mood"><option value="">Any mood</option></select>
+    <select id="f-style" aria-label="Style"><option value="">Any style</option></select>
+    <select id="f-tempo" aria-label="Tempo">
+      <option value="">Any tempo</option><option>slow</option><option>medium</option><option>fast</option>
+    </select>
+    <select id="f-energy" aria-label="Energy">
+      <option value="">Any energy</option><option>low</option><option>medium</option><option>high</option>
+    </select>
+    <label class="toggle"><input type="checkbox" id="f-unsure"> Unconfirmed BPM</label>
+    <span class="count data" id="count"></span>
+  </div>
+</header>
+
+<main>
+  <div id="list" aria-label="Tracks"><p class="empty">Loading the catalog…</p></div>
+  <section id="editor" aria-label="Edit track"><p class="hint">Select a track to edit it.</p></section>
+</main>
+
+<footer id="transport">
+  <div class="transport-buttons">
+    <button id="t-prev" aria-label="Previous track" title="Previous (K)"><svg viewBox="0 0 16 16"><path d="M3 2h2v12H3zM14 2v12L6 8z"/></svg></button>
+    <button id="t-play" aria-label="Play" title="Play or pause (Space)"><svg viewBox="0 0 16 16"><path id="t-play-icon" d="M4 2l10 6-10 6z"/></svg></button>
+    <button id="t-next" aria-label="Next track" title="Next (J)"><svg viewBox="0 0 16 16"><path d="M11 2h2v12h-2zM2 2l8 6-8 6z"/></svg></button>
+  </div>
+  <div class="now">
+    <div class="now-title" id="now-title">Nothing playing</div>
+    <div class="scrub">
+      <input type="range" id="seek" min="0" max="1000" value="0" aria-label="Position">
+      <span class="time data" id="time">0:00 / 0:00</span>
+    </div>
+    <div class="audio-error" id="audio-error" hidden></div>
+  </div>
+  <label class="toggle loop"><input type="checkbox" id="loop"> Loop</label>
+</footer>
+<audio id="audio" preload="none"></audio>
+
+<script>
+"use strict";
+const $ = (id) => document.getElementById(id);
+const el = (tag, props = {}, ...children) => {
+  const node = Object.assign(document.createElement(tag), props);
+  for (const child of children) if (child != null) node.append(child);
+  return node;
+};
+const ICON_PLAY = "M4 2l10 6-10 6z";
+const ICON_PAUSE = "M3 2h4v12H3zM9 2h4v12H9z";
+const svgIcon = (d) => {
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("viewBox", "0 0 16 16");
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute("d", d);
+  svg.append(path);
+  return svg;
+};
+const fmtTime = (s) => !isFinite(s) ? "0:00" : `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+const store = {
+  get(key, fallback) { try { const v = localStorage.getItem("catalog-editor." + key); return v == null ? fallback : JSON.parse(v); } catch { return fallback; } },
+  set(key, value) { try { localStorage.setItem("catalog-editor." + key, JSON.stringify(value)); } catch {} },
+};
+
+const state = {
+  tracks: [],          // manifest tracks, kept in step with the server's answers
+  byId: new Map(),
+  edits: {},           // track id -> {reviewed, note, set, was, ...}
+  vocab: null,
+  keys: [],
+  tempoBands: [],
+  selected: null,
+  playing: null,
+  rows: new Map(),
+  visible: [],
+};
+
+/* Loading ------------------------------------------------------------------ */
+
+async function load() {
+  let data;
+  try {
+    const response = await fetch("/api/catalog", { cache: "no-store" });
+    if (!response.ok) throw new Error(response.statusText);
+    data = await response.json();
+  } catch {
+    $("list").replaceChildren(el("div", { className: "notice" },
+      el("p", {}, "The editor needs its local server to read and save the catalog."),
+      el("p", {}, "From the repository, run ", el("code", { textContent: "python3 scripts/catalog-editor.py" }), " and open the address it prints.")));
+    $("editor").replaceChildren();
+    return;
+  }
+  state.tracks = data.manifest.tracks;
+  state.byId = new Map(state.tracks.map((t) => [t.id, t]));
+  state.edits = data.edits || {};
+  state.vocab = data.vocabulary;
+  state.keys = data.keys;
+  state.tempoBands = data.tempoBands;
+
+  const collections = [...new Set(state.tracks.map((t) => t.collection).filter(Boolean))].sort();
+  for (const c of collections) $("f-collection").append(el("option", { value: c, textContent: c }));
+  for (const m of Object.keys(state.vocab.mood)) $("f-mood").append(el("option", { value: m, textContent: m }));
+  for (const s of Object.keys(state.vocab.style)) $("f-style").append(el("option", { value: s, textContent: s }));
+
+  const filters = store.get("filters", {});
+  for (const [id, value] of Object.entries(filters)) {
+    const input = $(id);
+    if (!input) continue;
+    if (input.type === "checkbox") input.checked = !!value; else input.value = value;
+  }
+  $("loop").checked = store.get("loop", true);
+  audio.loop = $("loop").checked;
+
+  const audioCheck = audio.canPlayType('audio/ogg; codecs="vorbis"');
+  const needsOgg = state.tracks.some((t) => t.file.endsWith(".ogg"));
+  if (needsOgg && !audioCheck) showAudioError("This browser can't play Ogg Vorbis, the format of these tracks. Open the editor in Chrome, Edge or Firefox to listen.");
+
+  buildRows();
+  applyFilters();
+  updateProgress();
+  const remembered = store.get("selected", null);
+  select(state.byId.has(remembered) ? remembered : state.visible[0]?.id, { scroll: true });
+  // On a phone the editor covers the list; start on the list.
+  if (matchMedia("(max-width: 860px)").matches) $("editor").hidden = true;
+}
+
+/* Track list ----------------------------------------------------------------- */
+
+function trackState(id) {
+  const e = state.edits[id];
+  return { reviewed: !!e?.reviewed, edited: !!(e?.set && Object.keys(e.set).length) };
+}
+
+function buildRows() {
+  const list = $("list");
+  list.replaceChildren();
+  state.rows.clear();
+  for (const track of state.tracks) {
+    const row = el("div", { className: "row" });
+    row.dataset.id = track.id;
+    row.addEventListener("click", (event) => {
+      if (event.target.closest(".play")) return;
+      select(track.id);
+    });
+    state.rows.set(track.id, row);
+    list.append(row);
+    renderRow(track.id);
+  }
+  list.append(el("p", { className: "empty", id: "no-matches", hidden: true, textContent: "No tracks match these filters." }));
+}
+
+function renderRow(id) {
+  const track = state.byId.get(id);
+  const row = state.rows.get(id);
+  const { reviewed, edited } = trackState(id);
+  const playButton = el("button", { className: "play" + (state.playing === id && !audio.paused ? " on" : ""), title: "Play", ariaLabel: `Play ${track.title}` },
+    svgIcon(state.playing === id && !audio.paused ? ICON_PAUSE : ICON_PLAY));
+  playButton.addEventListener("click", () => togglePlay(id));
+
+  const chips = el("div", { className: "chips" });
+  if (track.mood) chips.append(el("span", { className: "chip primary", textContent: track.mood }));
+  for (const m of track.moods || []) if (m !== track.mood) chips.append(el("span", { className: "chip", textContent: m }));
+  for (const s of track.styles || []) chips.append(el("span", { className: "chip style", textContent: s }));
+
+  const meter = el("span", { className: "meter", title: `Energy: ${track.energy || "unknown"}` }, el("i"), el("i"), el("i"));
+  meter.dataset.level = track.energy || "";
+  const bpm = el("span", { className: "bpm data", title: track.bpmConfident ? "Two tempo estimators agreed" : "Unconfirmed: may be half, double or 2/3 of the real tempo" },
+    `${track.bpm ?? "?"}`, track.bpmConfident ? null : el("span", { className: "unsure", textContent: "?" }));
+  const marks = el("span", { className: "marks" },
+    edited ? el("span", { className: "mark edited", title: "Edited by hand", textContent: "E" }) : null,
+    reviewed ? el("span", { className: "mark done", title: "Reviewed", textContent: "✓" }) : null);
+
+  row.replaceChildren(
+    playButton,
+    el("div", { className: "row-main" },
+      el("div", { className: "row-title" }, el("strong", { textContent: track.title }),
+        el("span", { className: "row-sub data", textContent: `${track.collection ?? track.source} · ${fmtTime(track.durationS)}` })),
+      chips),
+    el("div", { className: "row-data" }, bpm, el("span", { className: "data", textContent: track.key ?? "" }), meter, marks));
+  row.classList.toggle("selected", state.selected === id);
+}
+
+const filterIds = ["q", "f-status", "f-collection", "f-mood", "f-style", "f-tempo", "f-energy", "f-unsure"];
+function applyFilters() {
+  const q = $("q").value.trim().toLowerCase();
+  const status = $("f-status").value, collection = $("f-collection").value, mood = $("f-mood").value;
+  const style = $("f-style").value, tempo = $("f-tempo").value, energy = $("f-energy").value, unsure = $("f-unsure").checked;
+  state.visible = [];
+  for (const track of state.tracks) {
+    const s = trackState(track.id);
+    const show =
+      (!q || track.title.toLowerCase().includes(q) || track.id.includes(q)) &&
+      (!status || (status === "todo" && !s.reviewed) || (status === "done" && s.reviewed) || (status === "edited" && s.edited)) &&
+      (!collection || track.collection === collection) &&
+      (!mood || track.mood === mood || (track.moods || []).includes(mood)) &&
+      (!style || (track.styles || []).includes(style)) &&
+      (!tempo || track.tempo === tempo) &&
+      (!energy || track.energy === energy) &&
+      (!unsure || !track.bpmConfident);
+    state.rows.get(track.id).hidden = !show;
+    if (show) state.visible.push(track);
+  }
+  $("no-matches").hidden = state.visible.length > 0;
+  $("count").textContent = `${state.visible.length} of ${state.tracks.length} tracks`;
+  store.set("filters", Object.fromEntries(filterIds.map((id) => [id, $(id).type === "checkbox" ? $(id).checked : $(id).value])));
+}
+for (const id of filterIds) $(id).addEventListener("input", applyFilters);
+
+function updateProgress() {
+  const done = state.tracks.filter((t) => state.edits[t.id]?.reviewed).length;
+  $("progress-fill").style.width = `${(100 * done) / Math.max(state.tracks.length, 1)}%`;
+  $("progress-text").textContent = `${done} / ${state.tracks.length} reviewed`;
+}
+
+/* Selection and the editor --------------------------------------------------------- */
+
+function select(id, { scroll = false } = {}) {
+  if (!id) return;
+  const previous = state.selected;
+  state.selected = id;
+  store.set("selected", id);
+  if (previous && state.rows.has(previous)) state.rows.get(previous).classList.remove("selected");
+  const row = state.rows.get(id);
+  row.classList.add("selected");
+  if (scroll) row.scrollIntoView({ block: "nearest" });
+  tap.reset();
+  renderEditor();
+  $("editor").hidden = false;
+}
+
+function step(delta) {
+  if (!state.visible.length) return;
+  const index = state.visible.findIndex((t) => t.id === state.selected);
+  const next = state.visible[Math.min(Math.max(index + delta, 0), state.visible.length - 1)];
+  const wasPlaying = state.playing && !audio.paused;
+  select(next.id, { scroll: true });
+  if (wasPlaying) play(next.id);
+}
+
+function editRecord(id) {
+  const e = state.edits[id] || {};
+  return { set: { ...(e.set || {}) }, reviewed: !!e.reviewed, note: e.note || "" };
+}
+
+function wasNote(id, fields, label) {
+  const e = state.edits[id];
+  const field = fields.find((f) => e?.was && f in e.was);
+  if (!field) return null;
+  let value = e.was[field];
+  if (Array.isArray(value)) value = value.length ? value.join(", ") : "none";
+  if (field === "bpm" && e.was.bpmConfident === false) value = `${value} (unconfirmed)`;
+  const undo = el("button", { type: "button", textContent: "undo" });
+  undo.addEventListener("click", () => {
+    const record = editRecord(id);
+    for (const f of fields) delete record.set[f];
+    save(id, record);
+  });
+  return el("span", { className: "was" }, el("span", { className: "edited-dot", title: `${label} edited by hand` }), ` was ${value ?? "empty"} · `, undo);
+}
+
+function field(labelText, control, note, forId) {
+  const label = el("label", { className: "label", textContent: labelText });
+  if (forId) label.htmlFor = forId;
+  return el("div", { className: "field" }, el("div", { className: "field-head" }, label, note), control);
+}
+
+function renderEditor() {
+  const id = state.selected;
+  const track = state.byId.get(id);
+  const editor = $("editor");
+  if (!track) { editor.replaceChildren(el("p", { className: "hint", textContent: "Select a track to edit it." })); return; }
+  const record = editRecord(id);
+  const change = (mutate) => { const r = editRecord(id); mutate(r); save(id, r); };
+
+  // Title: saved after a pause in typing.
+  const title = el("input", { type: "text", id: "f-title", value: track.title, maxLength: 120, autocomplete: "off" });
+  title.addEventListener("input", debounce(() => {
+    const value = title.value.trim();
+    if (!value) return;
+    change((r) => { r.set.title = value; });
+  }, 700));
+
+  const facts = el("dl", { className: "facts" });
+  const addFact = (k, v) => facts.append(el("dt", { textContent: k }), el("dd", { className: "data", textContent: v }));
+  addFact("File", track.file);
+  addFact("Length", `${fmtTime(track.durationS)} · ${track.loopable ? "seamless loop" : "not a loop"}`);
+  addFact("Loudness", track.lufs == null ? "not measured" : `${track.lufs} LUFS`);
+  addFact("Collection", track.collection ?? "none");
+  addFact("Genres", (track.genres || []).map((g) => g.replace("---", " / ")).join(", ") || "none above 0.1");
+
+  // BPM, with the corrections beat trackers most often need.
+  const bpmInput = el("input", { type: "number", id: "f-bpm", min: 20, max: 300, step: 1, value: track.bpm ?? "", inputMode: "numeric" });
+  const setBpm = (value) => {
+    const bpm = Math.round(value);
+    if (!(bpm >= 20 && bpm <= 300)) return;
+    bpmInput.value = bpm;
+    change((r) => { r.set.bpm = bpm; });
+  };
+  bpmInput.addEventListener("change", () => setBpm(Number(bpmInput.value)));
+  const quick = (label, title, fn) => {
+    const b = el("button", { type: "button", className: "btn", textContent: label, title });
+    b.addEventListener("click", fn);
+    return b;
+  };
+  const tapButton = el("button", { type: "button", className: "btn", id: "tap", textContent: "Tap", title: "Tap along to the beat (T)" });
+  const tapReadout = el("span", { className: "tap-readout data", id: "tap-readout" });
+  tapButton.addEventListener("click", () => tap.hit());
+  const bpmRow = el("div", { className: "bpm-row" }, bpmInput,
+    quick("½×", "Halve the tempo", () => setBpm((state.byId.get(id).bpm || 0) / 2)),
+    quick("2×", "Double the tempo", () => setBpm((state.byId.get(id).bpm || 0) * 2)),
+    quick("⅔×", "Two thirds: for a beat tracker that locked onto triplets", () => setBpm((state.byId.get(id).bpm || 0) * 2 / 3)),
+    quick("1.5×", "One and a half times", () => setBpm((state.byId.get(id).bpm || 0) * 1.5)),
+    tapButton, tapReadout);
+  if (!track.bpmConfident) {
+    bpmRow.append(quick("Confirm", "The tempo is right as it is", () => setBpm(state.byId.get(id).bpm)));
+  }
+  const bpmLabel = `BPM · ${track.tempo ?? ""}${track.bpmConfident ? "" : " · unconfirmed"}`;
+
+  // Key and energy.
+  const key = el("select", { id: "f-key" }, ...state.keys.map((k) => el("option", { value: k, textContent: k, selected: k === track.key })));
+  if (!state.keys.includes(track.key)) key.prepend(el("option", { value: "", textContent: track.key ?? "unknown", selected: true, disabled: true }));
+  key.addEventListener("change", () => change((r) => { r.set.key = key.value; }));
+  const energy = el("div", { className: "segmented", role: "group", ariaLabel: "Energy" },
+    ...["low", "medium", "high"].map((level) => {
+      const b = el("button", { type: "button", textContent: level });
+      b.setAttribute("aria-pressed", String(track.energy === level));
+      b.addEventListener("click", () => change((r) => { r.set.energy = level; }));
+      return b;
+    }));
+
+  // Mood and style.
+  const mood = el("select", { id: "f-mood-primary" }, ...Object.keys(state.vocab.mood).map((m) => el("option", { value: m, textContent: m, selected: m === track.mood })));
+  mood.addEventListener("change", () => change((r) => { r.set.mood = mood.value; }));
+  const pickers = (fieldName, names) => el("div", { className: "pickers" }, ...names.map((name) => {
+    const on = (track[fieldName] || []).includes(name);
+    const b = el("button", { type: "button", className: "pick", textContent: name });
+    b.setAttribute("aria-pressed", String(on));
+    b.addEventListener("click", () => change((r) => {
+      const current = state.byId.get(id)[fieldName] || [];
+      r.set[fieldName] = current.includes(name) ? current.filter((n) => n !== name) : [...current, name];
+    }));
+    return b;
+  }));
+
+  // Note and review.
+  const note = el("textarea", { id: "f-note", value: record.note, maxLength: 2000, placeholder: "Anything the tags can't say, or why you changed them" });
+  note.addEventListener("input", debounce(() => change((r) => { r.note = note.value; }), 700));
+  const reviewed = el("button", { type: "button", className: "btn", id: "reviewed",
+    textContent: record.reviewed ? "Mark not reviewed" : "Mark reviewed" });
+  reviewed.addEventListener("click", () => change((r) => { r.reviewed = !r.reviewed; }));
+  const reviewedNext = el("button", { type: "button", className: "btn primary", textContent: "Reviewed, next track" });
+  reviewedNext.addEventListener("click", async () => {
+    const r = editRecord(id);
+    r.reviewed = true;
+    await save(id, r);
+    step(1);
+  });
+  const edited = trackState(id).edited;
+  const revert = el("button", { type: "button", className: "btn", textContent: "Revert all edits", hidden: !edited,
+    title: "Put back the values the tagger wrote" });
+  revert.addEventListener("click", () => change((r) => { r.set = {}; }));
+  const closeButton = el("button", { type: "button", className: "btn close-editor", textContent: "Back to list" });
+  closeButton.addEventListener("click", () => { $("editor").hidden = true; });
+
+  editor.replaceChildren(
+    el("div", { className: "editor-head" }, closeButton, field("Title", title, wasNote(id, ["title"], "Title"), "f-title"), facts),
+    field(bpmLabel, bpmRow, wasNote(id, ["bpm", "bpmConfident", "tempo"], "BPM"), "f-bpm"),
+    field("Key", key, wasNote(id, ["key"], "Key"), "f-key"),
+    field("Energy", energy, wasNote(id, ["energy"], "Energy")),
+    field("Main mood", mood, wasNote(id, ["mood"], "Main mood"), "f-mood-primary"),
+    field("Moods", el("div", { className: "field" }, el("span", { className: "hint", textContent: "Every mood that clearly fits, for search. Can be empty; the main mood is always set." }), pickers("moods", Object.keys(state.vocab.mood))), wasNote(id, ["moods"], "Moods")),
+    field("Styles", pickers("styles", Object.keys(state.vocab.style)), wasNote(id, ["styles"], "Styles")),
+    field("Note", note, null, "f-note"),
+    el("div", { className: "review-bar" }, reviewedNext, reviewed, revert),
+    el("p", { className: "hint" }, "Keys: ", el("kbd", { textContent: "Space" }), " play · ", el("kbd", { textContent: "J" }), " / ",
+      el("kbd", { textContent: "K" }), " next / previous · ", el("kbd", { textContent: "R" }), " reviewed, next · ", el("kbd", { textContent: "T" }), " tap tempo"));
+}
+
+/* Saving ---------------------------------------------------------------------- */
+
+const queues = new Map();
+function save(id, record) {
+  // One write at a time per track, in order: the server stores whole records.
+  const run = async () => {
+    setSaveState("Saving…");
+    try {
+      const response = await fetch(`/api/tracks/${encodeURIComponent(id)}`, {
+        method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(record),
+      });
+      const body = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(body.error || `The server answered ${response.status}.`);
+      const index = state.tracks.findIndex((t) => t.id === id);
+      state.tracks[index] = body.track;
+      state.byId.set(id, body.track);
+      if (body.edit) state.edits[id] = body.edit; else delete state.edits[id];
+      renderRow(id);
+      if (state.selected === id && !isTyping()) renderEditor();
+      updateProgress();
+      setSaveState("All changes saved");
+    } catch (error) {
+      const message = error instanceof TypeError ? "Not saved: the editor's server isn't running. Restart scripts/catalog-editor.py." : `Not saved: ${error.message}`;
+      setSaveState(message, true);
+    }
+  };
+  const next = (queues.get(id) || Promise.resolve()).then(run);
+  queues.set(id, next);
+  return next;
+}
+function setSaveState(text, isError = false) {
+  const node = $("save-state");
+  node.textContent = text;
+  node.classList.toggle("error", isError);
+}
+function isTyping() {
+  const a = document.activeElement;
+  return a && (a.id === "f-title" || a.id === "f-note");
+}
+function debounce(fn, ms) {
+  let timer;
+  return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
+}
+
+/* Tap tempo -------------------------------------------------------------------- */
+
+const tap = {
+  times: [],
+  hit() {
+    const now = performance.now();
+    if (this.times.length && now - this.times[this.times.length - 1] > 2000) this.times = [];
+    this.times.push(now);
+    this.times = this.times.slice(-9);
+    const readout = $("tap-readout");
+    if (this.times.length < 4) { if (readout) readout.textContent = `${this.times.length} tap${this.times.length > 1 ? "s" : ""}…`; return; }
+    const intervals = this.times.slice(1).map((t, i) => t - this.times[i]);
+    const bpm = Math.round(60000 / (intervals.reduce((a, b) => a + b, 0) / intervals.length));
+    if (readout) {
+      readout.replaceChildren(`${bpm} BPM `);
+      const use = el("button", { type: "button", className: "btn", textContent: `Use ${bpm}` });
+      use.addEventListener("click", () => { const r = editRecord(state.selected); r.set.bpm = bpm; save(state.selected, r); });
+      readout.append(use);
+    }
+  },
+  reset() { this.times = []; },
+};
+
+/* Audio ------------------------------------------------------------------------ */
+
+const audio = $("audio");
+function showAudioError(message) {
+  $("audio-error").textContent = message;
+  $("audio-error").hidden = !message;
+}
+function play(id) {
+  const track = state.byId.get(id);
+  const previous = state.playing;
+  if (previous !== id) {
+    state.playing = id;
+    audio.src = `/audio/${encodeURIComponent(track.file)}`;
+    $("now-title").textContent = track.title;
+    if (previous) renderRow(previous);
+  }
+  showAudioError("");
+  audio.play().catch((error) => {
+    if (error.name !== "AbortError") showAudioError(`Couldn't play this track: ${error.message}`);
+  });
+}
+function togglePlay(id) {
+  if (state.playing === id && !audio.paused) audio.pause(); else play(id);
+}
+function syncPlayState() {
+  $("t-play-icon").setAttribute("d", audio.paused ? ICON_PLAY : ICON_PAUSE);
+  $("t-play").setAttribute("aria-label", audio.paused ? "Play" : "Pause");
+  if (state.playing) renderRow(state.playing);
+}
+audio.addEventListener("play", syncPlayState);
+audio.addEventListener("pause", syncPlayState);
+audio.addEventListener("ended", syncPlayState);
+audio.addEventListener("error", () => {
+  if (audio.src) showAudioError("Couldn't load this track. Check your connection, or pass --audio with a folder of the release's files.");
+});
+audio.addEventListener("timeupdate", () => {
+  if (!seeking) $("seek").value = audio.duration ? Math.round((1000 * audio.currentTime) / audio.duration) : 0;
+  $("time").textContent = `${fmtTime(audio.currentTime)} / ${fmtTime(audio.duration)}`;
+});
+let seeking = false;
+$("seek").addEventListener("input", () => { seeking = true; });
+$("seek").addEventListener("change", () => {
+  if (audio.duration) audio.currentTime = (Number($("seek").value) / 1000) * audio.duration;
+  seeking = false;
+});
+$("t-play").addEventListener("click", () => {
+  if (!state.playing) { if (state.selected) play(state.selected); return; }
+  if (audio.paused) play(state.playing); else audio.pause();
+});
+$("t-next").addEventListener("click", () => step(1));
+$("t-prev").addEventListener("click", () => step(-1));
+$("loop").addEventListener("change", () => { audio.loop = $("loop").checked; store.set("loop", audio.loop); });
+
+/* Keyboard ---------------------------------------------------------------------- */
+
+document.addEventListener("keydown", (event) => {
+  const target = event.target;
+  if (event.metaKey || event.ctrlKey || event.altKey) return;
+  if (target.closest("input, textarea, select")) return;
+  const key = event.key.toLowerCase();
+  if (key === " ") {
+    event.preventDefault();
+    if (state.selected && state.playing !== state.selected) play(state.selected);
+    else if (state.playing) togglePlay(state.playing);
+  } else if (key === "j" || key === "arrowdown") { event.preventDefault(); step(1); }
+  else if (key === "k" || key === "arrowup") { event.preventDefault(); step(-1); }
+  else if (key === "r" && state.selected) {
+    const id = state.selected;
+    const r = editRecord(id);
+    r.reviewed = true;
+    save(id, r).then(() => step(1));
+  } else if (key === "t" && state.selected) { tap.hit(); }
+});
+
+load();
+</script>
+</body>
+</html>
