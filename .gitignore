@@ -9,3 +9,7 @@ node_modules/
 /candidates/
 
 __pycache__/
+
+# Model files for scripts/tag-tracks.py (~2.4 GB). Outside build/, which
+# sync-upstream empties on every run.
+/.cache/

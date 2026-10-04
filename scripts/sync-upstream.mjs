@@ -154,7 +154,23 @@ function findAudio(root, exclude) {
   return found.filter((f) => !exclude.some((needle) => f.includes(needle))).sort();
 }
 
-/** Unpack one zip, or every zip in a directory, into a scratch dir. */
+/**
+ * The collection a file belongs to: the bundle zip it came out of, named as
+ * the zip is ("music-loop-bundle-2024-q1.zip" is "2024-q1"). For a plain
+ * directory, the first folder under it, or null when the file sits at the top.
+ */
+function collectionFor(file, root) {
+  const segments = path.relative(root, file).split(path.sep);
+  if (segments.length < 2) return null;
+  return segments[0]
+    .toLowerCase()
+    .replace(/\.zip$/, "")
+    .replace(/^music-loop-bundle-/, "")
+    .replace(/[^a-z0-9._-]+/g, "-")
+    .replace(/^[-.]+|[-.]+$/g, "") || null;
+}
+
+/** Unpack one zip, or every zip in a directory, into a scratch dir: one folder per zip. */
 function unpack(location, into) {
   fs.mkdirSync(into, { recursive: true });
   const zips = location.toLowerCase().endsWith(".zip")
@@ -167,15 +183,17 @@ function unpack(location, into) {
 
   if (!zips.length) return location; // already a plain directory of audio
   for (const zip of zips) {
-    // Everything, with no include patterns, and -j to flatten.
+    // Each zip into a folder of its own name, which is how a track keeps its
+    // `collection`. It also means two zips holding the same file name surface
+    // as a duplicate id below, instead of one silently overwriting the other.
     //
-    // -j because each bundle is one flat folder and the zip name would
-    // otherwise end up in every slug. No include patterns because
+    // Everything, with no include patterns, and -j to flatten inside that
+    // folder, since some zips nest their audio a level down. No include patterns because
     // `unzip … *.mp3` exits 11 ("no matching files") on an all-Ogg bundle —
     // which all of these are — and that killed the whole run. `findAudio`
     // filters by extension regardless, so the artwork and readmes that come
     // out here are simply ignored.
-    execFileSync("unzip", ["-qq", "-o", "-j", zip, "-d", into], { stdio: "ignore" });
+    execFileSync("unzip", ["-qq", "-o", "-j", zip, "-d", path.join(into, path.basename(zip))], { stdio: "ignore" });
   }
   return into;
 }
@@ -227,7 +245,7 @@ async function mapLimit(items, worker) {
   return results;
 }
 
-async function describe(input, source, outDir, { measureLoudness }) {
+async function describe(input, source, outDir, { measureLoudness, collection }) {
   const ext = path.extname(input).toLowerCase();
   const id = slugify(input);
   const file = `${id}${ext}`;
@@ -258,6 +276,7 @@ async function describe(input, source, outDir, { measureLoudness }) {
     bytes: fs.statSync(target).size,
     sha256: crypto.createHash("sha256").update(fs.readFileSync(target)).digest("hex"),
     seeded: false,
+    ...(collection ? { collection } : {}),
   };
 }
 
@@ -286,16 +305,20 @@ function diff(before, after) {
     removed: before.filter((t) => !now.has(t.id)),
     changed: after.filter((t) => was.has(t.id) && was.get(t.id).sha256 !== t.sha256),
     unchanged: after.filter((t) => was.has(t.id) && was.get(t.id).sha256 === t.sha256),
+    moved: after.filter((t) => was.has(t.id) && (was.get(t.id).collection ?? null) !== (t.collection ?? null)),
+    was,
   };
 }
 
-function report({ added, removed, changed, unchanged }) {
+function report({ added, removed, changed, unchanged, moved, was }) {
   console.log("");
   for (const t of added) console.log(`  + ${t.id.padEnd(44)} ${String(t.durationS ?? "?").padStart(6)}s  ${t.source}`);
   for (const t of changed) console.log(`  ~ ${t.id.padEnd(44)} bytes differ — upstream re-encode?`);
   for (const t of removed) console.log(`  - ${t.id.padEnd(44)} gone from upstream`);
+  for (const t of moved) console.log(`  > ${t.id.padEnd(44)} collection ${was.get(t.id).collection ?? "none"} → ${t.collection ?? "none"}`);
   console.log(
-    `\n  ${added.length} added, ${changed.length} changed, ${removed.length} removed, ${unchanged.length} unchanged\n`,
+    `\n  ${added.length} added, ${changed.length} changed, ${removed.length} removed, ${unchanged.length} unchanged` +
+      (moved.length ? `, ${moved.length} in a different collection` : "") + "\n",
   );
 
   if (changed.length > 5) {
@@ -325,7 +348,9 @@ async function main() {
       const root = unpack(location, path.join(scratch, source));
       const inputs = findAudio(root, opts.exclude);
       console.log(`  ${source}: ${inputs.length} file(s)`);
-      const described = await mapLimit(inputs, (input) => describe(input, source, opts.out, { measureLoudness: opts.loudness }));
+      const described = await mapLimit(inputs, (input) =>
+        describe(input, source, opts.out, { measureLoudness: opts.loudness, collection: collectionFor(input, root) }),
+      );
       after.push(...described);
     }
   } finally {
@@ -344,6 +369,11 @@ async function main() {
     console.error(`\n  refusing: ${collisions.length} duplicate id(s) — ${collisions.slice(0, 5).join(", ")}\n`);
     process.exit(1);
   }
+
+  // A source that doesn't say (a flat folder of files) keeps the collection
+  // the manifest already records, rather than losing it.
+  const recorded = new Map(before.map((t) => [t.id, t.collection]));
+  after = after.map((t) => (t.collection || !recorded.get(t.id) ? t : { ...t, collection: recorded.get(t.id) }));
 
   after.sort((a, b) => a.id.localeCompare(b.id));
   report(diff(before, after));

@@ -6,8 +6,9 @@ Run by hand, like sync-upstream. Dry by default; --write updates the manifest.
 TWO STAGES, AND WHY
 -------------------
 1. Analysis (slow, ~1 s per track plus model loading). Each audio file is
-   measured once and the result is cached under build/analysis/<sha256>.json.
-   The cache is keyed by the bytes, so an upstream re-encode is re-measured and
+   measured once and the result is kept in analysis/<sha256>.json, which is
+   committed: a new track then costs one measurement, not a re-run of the
+   whole catalog. Keyed by the bytes, so an upstream re-encode is re-measured and
    an unchanged track never is.
 2. Scoring (fast). The cached measurements are scored against
    scripts/tag-vocabulary.json and the result is written into the manifest.
@@ -47,7 +48,7 @@ itself is AGPL-3.0; this script imports it and does not redistribute it.
     python scripts/tag-tracks.py --audio ~/vbm-audio --write
 
 Missing audio is downloaded from the release into --audio and checked against
-the manifest's sha256. Missing models are downloaded into build/models (the
+the manifest's sha256. Missing models are downloaded into .cache/models (the
 CLAP checkpoint is 2.35 GB).
 """
 import argparse
@@ -65,6 +66,7 @@ MANIFEST = REPO / "manifest.json"
 VOCABULARY = REPO / "scripts" / "tag-vocabulary.json"
 EDITS = REPO / "manifest-edits.json"
 BUILD = REPO / "build"
+ANALYSIS = REPO / "analysis"
 
 # Bump when the analysis stage changes, so stale cache entries are re-measured.
 ANALYSIS_VERSION = 1
@@ -264,17 +266,36 @@ def analyse(tracks, audio_dir, release_url, cache_dir, models_dir):
     for n, track in enumerate(todo, 1):
         path = ensure_audio(track, audio_dir, release_url)
         data = analyser(path)
-        (cache_dir / f"{track['sha256']}.json").write_text(json.dumps(data))
+        # Compact separators: these files are committed, ~20 KB each.
+        (cache_dir / f"{track['sha256']}.json").write_text(json.dumps(data, separators=(",", ":")) + "\n")
         results[track["id"]] = data
         log(f"  [{n}/{len(todo)}] {track['id']}")
     return results, analyser.clap
 
 
+def vocabulary_prompts(vocabulary):
+    return {axis: {tag: spec["prompts"] for tag, spec in vocabulary[axis].items()} for axis in ("mood", "style")}
+
+
+def text_cache_name(vocabulary):
+    """Text embeddings depend only on the prompts, so they are cached by a hash of them."""
+    key = hashlib.sha256(json.dumps(vocabulary_prompts(vocabulary), sort_keys=True).encode()).hexdigest()[:16]
+    return f"text-{key}.json"
+
+
+def prune_cache(cache_dir, tracks, vocabulary):
+    """Drop measurements of bytes no longer in the catalog, and embeddings of an old vocabulary."""
+    keep = {f"{t['sha256']}.json" for t in tracks} | {text_cache_name(vocabulary)}
+    removed = [p for p in cache_dir.glob("*.json") if p.name not in keep]
+    for path in removed:
+        path.unlink()
+    return len(removed)
+
+
 def text_embeddings(vocabulary, cache_dir, models_dir, clap):
     """One embedding per tag: its prompts embedded, averaged and renormalised."""
-    prompts = {axis: {tag: spec["prompts"] for tag, spec in vocabulary[axis].items()} for axis in ("mood", "style")}
-    key = hashlib.sha256(json.dumps(prompts, sort_keys=True).encode()).hexdigest()[:16]
-    cached = cache_dir / f"text-{key}.json"
+    prompts = vocabulary_prompts(vocabulary)
+    cached = cache_dir / text_cache_name(vocabulary)
     if cached.exists():
         return json.loads(cached.read_text())
     if clap is None:
@@ -286,8 +307,8 @@ def text_embeddings(vocabulary, cache_dir, models_dir, clap):
             vectors = clap.get_text_embedding(texts)
             vectors = vectors / np.linalg.norm(vectors, axis=1, keepdims=True)
             mean = vectors.mean(axis=0)
-            out[axis][tag] = [float(v) for v in mean / np.linalg.norm(mean)]
-    cached.write_text(json.dumps(out))
+            out[axis][tag] = [round(float(v), 6) for v in mean / np.linalg.norm(mean)]
+    cached.write_text(json.dumps(out, separators=(",", ":")) + "\n")
     return out
 
 
@@ -458,8 +479,9 @@ def apply_edits(tracks, tagged, edits):
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--audio", type=Path, default=BUILD / "audio", help="directory of the release's audio files (missing ones are downloaded)")
-    parser.add_argument("--models", type=Path, default=BUILD / "models", help="model directory (missing models are downloaded)")
-    parser.add_argument("--cache", type=Path, default=BUILD / "analysis", help="analysis cache, keyed by sha256")
+    # Not under build/: sync-upstream empties build/ on every run, and the models are 2.4 GB.
+    parser.add_argument("--models", type=Path, default=REPO / ".cache" / "models", help="model directory; missing models are downloaded (default: .cache/models)")
+    parser.add_argument("--cache", type=Path, default=ANALYSIS, help="analysis cache, keyed by sha256 (default: analysis/, committed)")
     parser.add_argument("--write", action="store_true", help="update manifest.json (default: print and stop)")
     args = parser.parse_args()
 
@@ -482,7 +504,9 @@ def main():
     MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n")
     if kept:
         EDITS.write_text(json.dumps(edits, indent=2, ensure_ascii=False) + "\n")
-    print(f"  ✓ manifest.json updated, {len(tracks)} track(s) tagged, hand edits kept on {kept}\n")
+    pruned = prune_cache(args.cache, tracks, vocabulary)
+    print(f"  ✓ manifest.json updated, {len(tracks)} track(s) tagged, hand edits kept on {kept}")
+    print(f"    {args.cache.name}/ holds {len(tracks)} measurement(s); {pruned} stale file(s) removed. Commit it with the manifest.\n")
 
 
 if __name__ == "__main__":

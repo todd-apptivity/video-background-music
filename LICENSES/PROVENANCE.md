@@ -105,3 +105,11 @@ the Essentia votes. The fields they produce are treated as facts about the
 audio, not as an adaptation of the models, so the manifest stays under this
 repository's MIT licence. That is this project's reading of the licence, not
 settled law.
+
+`analysis/` holds the raw measurements the tags are scored from, one file per
+track: the three tempo estimates, key, onset density, every Essentia class
+probability and the track's CLAP embedding, plus the CLAP embeddings of the
+vocabulary. They are kept so a new track only needs measuring once. The same
+reading applies to them as to the manifest fields: outputs of the models,
+covered by this repository's MIT licence, with the Essentia part credited
+above.

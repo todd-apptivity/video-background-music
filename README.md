@@ -14,6 +14,7 @@ scripts/sync-upstream  # run by hand; never scheduled
 scripts/tag-tracks.py  # tempo, key, mood and style tags; also by hand
 scripts/catalog-editor # listen to tracks and fix their metadata in a browser
 manifest-edits.json    # what a person changed in the editor; always wins
+analysis/              # per-track model measurements behind the tags
 (release assets)       # v1/ambient-drift.mp3, … the actual tracks
 ```
 
@@ -62,20 +63,30 @@ would hand every one of them an attribution obligation they never agreed to.
 *could* be added deliberately and surfaced in the consumer's UI — not so one
 can arrive quietly.
 
+The bundle downloads from itch.io as one zip per collection
+(`music-loop-bundle-2024-q1.zip`, `music-loop-bundle-troubadeck.zip`, and so
+on). Put them in one folder and point `--bundle` at it. Each track's
+`collection` comes from the zip it was in.
+
 ```bash
 # dry by default: prints added / changed / removed / unchanged and stops
-node scripts/sync-upstream.mjs --bundle ~/Downloads/music-loop-bundle.zip
+node scripts/sync-upstream.mjs --bundle ~/Downloads/music-loop-bundle/
 
 # writes manifest.json and prints the gh command to upload the new release
-node scripts/sync-upstream.mjs --bundle ~/Downloads/... --write --tag v2
+node scripts/sync-upstream.mjs --bundle ~/Downloads/music-loop-bundle/ --write --tag v2
+
+# then measure and tag the new tracks (only they are analysed; see Tags)
+python scripts/tag-tracks.py --audio build --write
 ```
+
+Commit `manifest.json` and `analysis/` together.
 
 **The sync is manual and occasional, by design.** Abstraction is still
 publishing to that bundle. A scheduled sync would quietly redefine what this
 mirror contains, and the whole point of a mirror is that it does not change
 under its consumers.
 
-Needs `ffmpeg` on PATH, for transcode and loudness normalisation.
+Needs `ffmpeg` and `ffprobe` on PATH, to measure duration and loudness. Nothing is transcoded.
 
 ## Tags
 
@@ -105,10 +116,16 @@ python scripts/tag-tracks.py --audio ~/vbm-audio --write  # updates manifest.jso
 ```
 
 Missing audio is downloaded from the release and checked against its
-`sha256`; missing models go into `build/models` (about 2.4 GB, mostly the CLAP
-checkpoint). Measurements are cached by `sha256` in `build/analysis`, so
-re-running after a vocabulary edit takes seconds. `sync-upstream` carries the
-fields forward for any track whose bytes did not change.
+`sha256`; missing models go into `.cache/models` (about 2.4 GB, mostly the CLAP
+checkpoint). Each track's measurements are kept in `analysis/<sha256>.json`,
+which is committed (about 20 KB a track), so a new track costs one
+measurement instead of a re-run of the whole catalog, and re-scoring after a
+vocabulary edit takes seconds. `sync-upstream` carries the fields forward for
+any track whose bytes did not change.
+
+Because tags are relative to the catalog, adding tracks can nudge an existing
+track's tags the next time `--write` runs. The dry run shows every track's
+tags first, and hand edits are never changed (see below).
 
 The Essentia models are CC BY-NC-SA 4.0 (non-commercial, with attribution).
 See `LICENSES/PROVENANCE.md` for every model, its licence, and why its use here
